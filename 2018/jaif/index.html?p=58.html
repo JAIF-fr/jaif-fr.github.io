@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="fr-FR">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="fr-FR">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="fr-FR">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Informations pratiques | Injection de fautes : attaques physiques, protections logicielles et mécanismes d&#039;évaluation de la robustesse</title>
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://wp-systeme.lip6.fr/jaif/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://wp-systeme.lip6.fr/jaif/wp-content/themes/twentythirteen/js/html5.js?ver=3.7.0"></script>
+	<![endif]-->
+	<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Injection de fautes : attaques physiques, protections logicielles et mécanismes d&#039;évaluation de la robustesse &raquo; Flux" href="feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Injection de fautes : attaques physiques, protections logicielles et mécanismes d&#039;évaluation de la robustesse &raquo; Flux des commentaires" href="comments/feed/index.html" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/wp-systeme.lip6.fr\/jaif\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='wp-includes/css/dist/block-library/style.min.css%3Fver=5.7.css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='wp-includes/css/dist/block-library/theme.min.css%3Fver=5.7.css' media='all' />
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='wp-content/themes/twentythirteen/genericons/genericons.css%3Fver=3.0.3.css' media='all' />
+<link rel='stylesheet' id='twentythirteen-style-css'  href='wp-content/themes/twentythirteen/style.css%3Fver=20201208.css' media='all' />
+<link rel='stylesheet' id='twentythirteen-block-style-css'  href='wp-content/themes/twentythirteen/css/blocks.css%3Fver=20190102.css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css'  href='https://wp-systeme.lip6.fr/jaif/wp-content/themes/twentythirteen/css/ie.css?ver=20150214' media='all' />
+<![endif]-->
+<script src='wp-includes/js/jquery/jquery.min.js%3Fver=3.5.1' id='jquery-core-js'></script>
+<script src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="wp-json/index.html" /><link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/58" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7" />
+<link rel="canonical" href="index.html%3Fp=58.html" />
+<link rel='shortlink' href='index.html%3Fp=58.html' />
+<link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fwp-systeme.lip6.fr%252Fjaif%252Finformations-pratiques%252F" />
+<!-- Analytics by WP-Statistics v13.0.6 - https://wp-statistics.com/ -->
+	<style type="text/css" id="twentythirteen-header-css">
+			.site-title,
+		.site-description {
+			color: #0e76ed;
+		}
+		</style>
+	</head>
+
+<body class="page-template-default page page-id-58 wp-embed-responsive single-author">
+		<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="../jaif.html" title="Injection de fautes : attaques physiques, protections logicielles et mécanismes d&#039;évaluation de la robustesse" rel="home">
+				<h1 class="site-title">Injection de fautes : attaques physiques, protections logicielles et mécanismes d&#039;évaluation de la robustesse</h1>
+				<h2 class="site-description">Journée thématique &#8211; Mardi 29 mai 2018, Campus de Jussieu, Paris</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<button class="menu-toggle">Menu</button>
+					<a class="screen-reader-text skip-link" href="index.html%3Fp=58.html#content" title="Aller au contenu">Aller au contenu</a>
+					<div id="primary-menu" class="nav-menu"><ul>
+<li class="page_item page-item-2"><a href="../jaif.html">Description</a></li>
+<li class="page_item page-item-29"><a href="index.html%3Fp=29.html">Programme</a></li>
+<li class="page_item page-item-31"><a href="index.html%3Fp=31.html">Inscription</a></li>
+<li class="page_item page-item-58 current_page_item"><a href="index.html%3Fp=58.html" aria-current="page">Informations pratiques</a></li>
+</ul></div>
+					<form role="search" method="get" class="search-form" action="../jaif.html">
+				<label>
+					<span class="screen-reader-text">Rechercher :</span>
+					<input type="search" class="search-field" placeholder="Rechercher…" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Rechercher" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+			
+				<article id="post-58" class="post-58 page type-page status-publish hentry">
+					<header class="entry-header">
+						
+						<h1 class="entry-title">Informations pratiques</h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<p><strong>Date :</strong> La journée aura lieu de 10h à 17h le mardi 29 mai 2018 &#8212; <strong>voir la page d&#8217;inscription concernant la grève prévue ce jour là si vous hésitez à vous inscrire pour cette raison.</strong></p>
+<p><strong>Lieu :</strong> Laboratoire d&#8217;Informatique de Paris 6 (LIP6) salle 105 25-26 &#8211; Campus de Jussieu.<br />
+La salle 105 se situe au premier étage entre les tours 25 et 26.</p>
+<p><strong>Accès :</strong></p>
+<p><img loading="lazy" class="wp-image-65 aligncenter" src="wp-content/uploads/sites/8/2018/03/PlanJussieuSoutenance-264x300.png" alt="" width="569" height="647" srcset="wp-content/uploads/sites/8/2018/03/PlanJussieuSoutenance-264x300.png 264w, wp-content/uploads/sites/8/2018/03/PlanJussieuSoutenance-768x872.png 768w, wp-content/uploads/sites/8/2018/03/PlanJussieuSoutenance-902x1024.png 902w, wp-content/uploads/sites/8/2018/03/PlanJussieuSoutenance.png 1136w" sizes="(max-width: 569px) 100vw, 569px" /></p>
+											</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+											</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+	
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			<div class="site-info">
+												<a href="https://wordpress.org/" class="imprint">
+					Fièrement propulsé par WordPress				</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script src='wp-content/themes/twentythirteen/js/functions.js%3Fver=20171218' id='twentythirteen-script-js'></script>
+<script src='wp-includes/js/wp-embed.min.js%3Fver=5.7' id='wp-embed-js'></script>
+</body>
+</html>
