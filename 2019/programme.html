@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JAIF 2019 - journée thématique sur les attaques par injection de fautes">
+    <title>
+      JAIF 2019 - Journée thématique sur les attaques par injection de fautes
+    </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+            <link rel="stylesheet" href="assets/css/marketing-old-ie.css">
+        <![endif]-->
+         <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="assets/css/side-menu.css">
+         <!--<![endif]-->
+
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/img-overlay.css">
+  </head>
+
+  <body>
+      <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">Description</a></li>
+          <li class="pure-menu-item"><a href="./programme.html" class="pure-menu-link">Programme</a></li>
+          <li class="pure-menu-item"><a href="./inscription.html" class="pure-menu-link">Inscription</a></li>
+          <li class="pure-menu-item"><a href="./infos-pratiques.html" class="pure-menu-link">Informations pratiques</a></li>
+          <li class="pure-menu-item"><a href="./photos.html" class="pure-menu-link">Photos de la journée</a></li>
+        </ul>
+      </div>
+
+    <div id="main">
+      <div class="content">
+            <h1 id="programme">Programme</h1>
+<p>Le programme de la journée est aménagé pour maximiser les interactions entre les participants. Les présentations de chaque session auront vocation à être ouvertes aux interactions avec l’assemblée, et un temps de questions et de discussions sera réservé à la fin de chaque session.</p>
+<p>La journée débutera à 09h30, et le calendrier des présentations et des discussions scientifiques s’étalera de 10h00 à 16h45.</p>
+<p>Voici le programme de la journée :</p>
+<ul>
+<li>09:30−10:00   Accueil des participants autour d’un café</li>
+<li>10:00−10:10   Introduction à la journée</li>
+<li>10:10−11:25   <strong>Session #1. Injection de fautes</strong>
+<ul>
+<li><a href="#maurine">Philippe Maurine</a> (LIRRM). <em>Injection de fautes par médium EM : modèle et implications.</em> [<a href="media/JAIF2019%20P-Maurine.pdf">slides</a>]</li>
+<li><a href="#colombier">Brice Colombier</a> (Univ. Saint-Étienne). <em>On-the-fly laser-induced corruption of the firmware stored into the flash memory of a 32-bit microcontroller.</em> [<a href="media/JAIF2019%20B-Colombier.pdf">slides</a>]</li>
+<li><a href="#lashermes">Ronan Lashermes, Thomas Trouchkine</a> (INRIA, ANSSI). <em>How modern System-on-Chips are vulnerable to fault attacks.</em> [<a href="media/JAIF2019%20T-Trouchkine%20R-Lashermes.pdf">slides</a>]</li>
+</ul></li>
+<li>11:25−11:40   Pause</li>
+<li>11:40−12:30   <strong>Session #2. Architectures matérielles robustes</strong>
+<ul>
+<li><a href="#beroulle">Vincent Beroulle</a> (LCIS Valence). <em>Analyse de fautes au niveau RTL.</em> [<a href="media/JAIF2019%20BEROULLE%2023%20mai%202019.pdf">slides</a>]</li>
+<li><a href="#savry">Olivier Savry</a> (CEA). <em>IntrinSec: an intrinsically secure RISC V processor.</em> [<a href="media/JAIF2019%20Olivier%20Savry.pptx">slides</a>]</li>
+<li>Discussion</li>
+</ul></li>
+<li>12:30−13:45   Déjeuner</li>
+<li>13:45−14:35   <strong>Session #3. Questions ouvertes sur la sécurité des systèmes</strong>
+<ul>
+<li><a href="#bouffard">Guillaume Bouffard</a> (ANSSI). <em>Certification et IoT.</em> [<a href="media/JAIF2019%20G-Bouffard%20certification%20et%20iot.pdf">slides</a>]</li>
+<li><a href="#mounier">Laurent Mounier</a> (VERIMAG). <em>Concevoir des applications robustes à l’injection de fautes (projet CLAPs).</em> [<a href="media/JAIF2019%20Laurent%20Mounier.pdf">slides</a>]</li>
+<li>Discussion</li>
+</ul></li>
+<li>14:35−14:50   Pause</li>
+<li>14:50−15:40   <strong>Session #4. Protections logicielles</strong>
+<ul>
+<li><a href="#deferriere">François de Ferrière</a> (STMicroelectronics). <em>Compilation de contre-mesures.</em> [<a href="media/JAIF2019%20F-deFerriere.pdf">slides</a>]</li>
+<li><a href="#proy">Julien Proy</a> (INVIA). <em>Sécurisation automatisée des boucles à la compilation.</em> [<a href="media/JAIF2019%20J-Proy.pdf">slides</a>]</li>
+<li>Discussion</li>
+</ul></li>
+<li>15:40−15:55   Pause</li>
+<li>15:55−16:45   <strong>Session #5. Analyse de code</strong>
+<ul>
+<li><a href="#feliot">David Féliot</a> (CEA). <em>Techniques d’analyse statique pour détecter des vulnérabilités sécuritaires lors d’une revue de code.</em> [<a href="media/JAIF2019%C2%A0D-F%C3%A9liot.pdf">slides</a>]</li>
+<li><a href="#brejon">Jean-Baptiste Bréjon</a> (LIP6). <em>Évaluation sécuritaire de code binaire soumis à des attaques en faute.</em> [<a href="media/JAIF2019%20JB-Br%C3%A9jon.pdf">slides</a>]</li>
+<li>Discussion</li>
+</ul></li>
+<li>16:45−16:50   Conclusion de la journée</li>
+</ul>
+<h1 id="résumés-des-présentations">Résumés des présentations</h1>
+<h3 id="maurine">Injection de fautes par médium EM : modèle et implications</h3>
+<p><em>Philippe Maurine (LIRMM)</em></p>
+<p>La première publication traitant d’attaques par faute(s) conduites par médium électromagnétique a été publiée en 2002. Plus de 15 ans après, le mécanisme par lequel ces fautes apparaissent n’est toujours pas clairement établi. Dans ce contexte, cette présentation s’attachera à expliquer finement l’apparition des fautes et ce en partant des principes de l’induction électromagnétique jusqu’au tréfonds des circuits intégrés. Enfin, les enseignements de ce modèle seront tirés tant pour établir des pistes de contremesures que des moyens d’améliorations des plateformes d’injection EM.</p>
+<h3 id="colombier">On-the-fly laser-induced corruption of the firmware stored into the flash memory of a 32-bit microcontroller</h3>
+<p><em>Brice Colombier (CEA)</em>, <em>Alexandre Menu (EMSE)</em>, <em>Jean-Max Dutertre (EMSE)</em>, <em>Pierre-Alain Moëllic (CEA)</em>, <em>Jean-Baptiste Rigaud (EMSE)</em>, <em>Jean-Luc Danger (Telecom ParisTech)</em></p>
+<p>L’injection de faute laser est souvent considérée comme la technique d’injection de faute la plus efficace. En effet, elle offre la plus grande précision spatiale, permettant ainsi à l’attaquant d’induire des fautes au niveau bit. Néanmoins, l’expérience acquise lors de l’attaque de cibles 8 bits n’est pas directement transférable à des microcontrôleurs 32 bits complexes, et ces attaques deviennent de plus en plus difficiles. Dans cette présentation, nous montrons que la mémoire Flash est une zone sensible à l’injection de fautes même sur des microcontrôleurs aux architectures avancées. Ces fautes ont lieu pendant la phase de lecture, et la donnée stockée n’est donc pas modifiée. Après une caractérisation des fautes réalisées et du modèle de faute associé, nous donnerons des exemples détaillés de corruption d’instructions au niveau bit et d’attaques sur des codes d’évaluation classiques. Nous proposerons finalement une hypothèse à propos des caractéristiques physiques de la micro-architecture qui permet d’expliquer le modèle de faute observé.</p>
+<h3 id="lashermes">How modern System-on-Chips are vulnerable to fault attacks</h3>
+<p><em>Guillaume Bouffard (ANSSI)</em>, <em>Sébanjila Kevin Bukasa (INRIA)</em>, <em>Mathieu Escouteloup (INRIA)</em>, <em>Ronan Lashermes (INRIA)</em>, <em>Thomas Trouchkine (ANSSI)</em></p>
+<p>Electromagnetic fault injection (EMFI) is a well known technique to disturb the behavior of a chip and weaken its security. Yet these attacks are mostly done on simple microcontrollers since the fault effect is relatively simple and understood.</p>
+<p>Unlocking EMFI on modern System-on-Chips (SoCs), the fast and complex chips ubiquitous today, requires to understand the impact of the faults. In this paper we target the BCM2837 SoC, with four Cortex-A53 cores from ARM. We propose an experimental setup and a forensic process to create exploitable faults and assess their impact on the micro-architecture.</p>
+<p>The observed behaviors are radically different to what was previously obtained on microcontrollers. Subsystems (L1 caches, L2 cache, MMU) can be individually targeted leading to new fault models. We highlight the differences in the fault impact with or without an Operation System, therefore showing the importance of the software layers in the exploitation of a fault.</p>
+<p>The complexity and speed of a SoC does not protect them against hardware attackers, quite the contrary.</p>
+<p>We advocate for the design of secure generic cores with a stronger security model to run all security related code (which emcompass all priviledged code).</p>
+<h3 id="beroulle">Analyse de fautes au niveau RTL</h3>
+<p><em>Vincent Beroulle (LCIS Valence)</em></p>
+<p>Dans cet exposé, nous présenterons une méthode d’évaluation et d’amélioration des contremesures matérielles et logicielles pour protéger l’exécution d’un code sécurisé contre les attaques en fautes.</p>
+<p>Afin de se protéger contre les attaques en fautes, les développeurs utilisent souvent des contremesures logicielles. Mais ces contremesures ne protègent le code que contre les effets induits par les modèles de fautes logiciels (saut d’instruction, l’inversion de test…). Or, ces modèles de fautes ne prennent pas en compte l’implémentation matérielle des processeurs. En analysant la microarchitecture au niveau RTL des processeurs, il est possible de trouver des fautes matérielles qui créent des failles de sécurité. Nous donnerons des exemples de ce type de fautes en nous appuyant sur des codes sécurisés issus de FISSC et en utilisant la description RTL d’un processeur RISC-V. Nous montrerons notamment l’importance des registres cachés dans le pipeline du processeur. Finalement, nous proposerons des contremesures logicielles robustes contre ces attaques en faute.</p>
+<h3 id="savry">IntrinSec: an intrinsically secure RISC V processor</h3>
+<p><em>Olivier Savry (CEA)</em></p>
+<p>Dans le cadre du projet Nanotrust soutenu par l’IRT Nanoelec nous développons une gamme de processeurs intrinsèquement sécurisés pour les CPS. Ces processeurs sont capables d’exécuter du code chiffré où chaque instruction est également associée à un MAC qui permet une vérification de son intégrité au runtime. Cette structure permet également la mise en place aisée d’un CFI intrinsèque avec un chaînage cryptographique des Basic Blocks et de protection contre les stack overflows. Toute déviation du graphe de flot de contrôle est ainsi détecter par une erreur à la vérification des MAC.</p>
+<h3 id="bouffard">Certification et IoT</h3>
+<p><em>Guillaume Bouffard (ANSSI)</em></p>
+<p>Résumé à venir.</p>
+<h3 id="mounier">Concevoir des applications robustes à l’injection de fautes (projet CLAPs)</h3>
+<p><em>Laurent Mounier (VERIMAG)</em></p>
+<p>Concevoir des applications robustes à l’injection de fautes est un processus complexe qui nécessite de prendre en compte les scénarios d’attaques (que veut-on protéger), l’effet des attaques (le modèle de fautes) et ceci afin de mettre en place les contre-mesures adéquates. Ce processus est rendu encore plus complexe dans le cadre du multi-fautes, qui permet en plus de modifier le comportement des contre-mesures.</p>
+<p>Le projet CLAPs s’intéresse d’une part à proposer des analyses du code source, au code binaire jusqu’aux attaques physiques, afin de pouvoir rendre robuste une implémentation et d’’autre part à proposer des contre-mesures automatiques permettant de se prémunir contre des modèles de fautes déterminés.</p>
+<p>Nous illustrerons ces démarches sur les études de cas du projet CLAPs issues du benchmark FISSC et sur une application interne au projet, un Firmware Update.</p>
+<h3 id="deferriere">Compilation de contre-mesures</h3>
+<p><em>François de Ferrière (STMicroelectronics Grenoble)</em></p>
+<p>STMicroelectronics développe des outils de compilation basés sur la technologie LLVM pour ses cœurs propriétaires ainsi que pour le processeur ARM.</p>
+<p>Afin d’ajouter des contre-mesures logicielles de résistance aux attaques par injection de fautes, qui puissent être à la fois non triviales, fiables et rapides à implémenter dans les produits développés par STMicroelectronics, nous avons implémenté des techniques de génération de code pour la cybersécurité dans notre compilateur LLVM de production.</p>
+<p>Nous présentons dans cet exposé ces techniques et transformations que nous avons implémentées. Nous montrons comment elles contribuent au renforcement de la protection des applications. Nous détaillons également comment ces techniques peuvent être appliquées localement à certaines régions critiques d’une application afin de satisfaire les contraintes industrielles de taille et de performances de ces applications.</p>
+<h3 id="proy">Sécurisation automatisée des boucles à la compilation</h3>
+<p><em>Julien Proy (INVIA)</em>, <em>Karine Heydemann (Univ. Sorbonne, Paris)</em>, <em>Alexandre Berzati (INVIA)</em>, <em>Albert Cohen (Google)</em></p>
+<p>La sécurisation des systèmes embarqués est un enjeu majeur dans l’industrie. Le déploiement de contre-mesures logicielles est encore largement réalisé de façon manuelle, induisant des coûts et temps de développement importants. Afin de réduire ces coûts, les industriels sont à la recherche d’approches automatisées, nécessitant des schémas de protection génériques.</p>
+<p>Nous présentons dans cet exposé une contre-mesure dédiée à la sécurisation des boucles applicable automatiquement à la compilation. Une implémentation dans le compilateur LLVM ainsi qu’une étude des interactions avec les optimisations du compilateur sont également détaillées. Enfin, nous montrons les résultats associés provenant de simulations et de campagnes d’attaques physiques.</p>
+<h3 id="feliot">Techniques d’analyse statique pour détecter des vulnérabilités sécuritaires lors d’une revue de code</h3>
+<p><em>David Féliot (CEA)</em></p>
+<p>L’évaluation de la résistance aux attaques d’un produit de type carte à puce comprend une revue de code du logiciel embarqué. L’objectif de cette revue est de détecter dans le code source des vulnérabilités qui peuvent être exploitées par un attaquant pour forcer ou contourner des fonctions de sécurité, par exemple une fonction de contrôle d’accès. L’exposé présentera d’une part les spécificités et les contraintes liées à l’activité d’évaluation sécuritaire, et d’autre part l’apport des techniques d’analyse statique pour augmenter la fiabilité et l’efficacité de la revue de code.</p>
+<h3 id="brejon">Évaluation sécuritaire de code binaire soumis à des attaques en faute</h3>
+<p><em>Jean-Baptiste Bréjon (LIP6)</em>, <em>Karine Heydemann (Univ. Sorbonne, Paris)</em>, <em>Emmanuelle Encrenaz (Univ. Sorbonne, Paris)</em>, <em>Quentin Meunier (Univ. Sorbonne, Paris)</em></p>
+<p>Les attaques en fautes constituent une menace sérieuse pour les applications embarquées. Pour s’en prémunir, le code peut être renforcé par l’insertion de protections visant à détecter ou tolérer des attaques en faute et la robustesse obtenue doit être évaluée. Dans cet exposé, nous présenterons une approche, implémentée dans le framework RobustB, combinant des analyses statiques et dynamiques de code avec de la vérification formelle et un ensemble de métriques pour évaluer la robustesse d’un code binaire soumis à des attaques en faute. Notre approche modélise la recherche de vulnérabilités par des problèmes d’équivalence-checking résolus par un SMT sovler.</p>
+<p>RobustB permet d’analyser la robustesse de code après compilation, et à l’aide des métriques, il permet de comparer des codes intégrant différentes protections et/ou compilés avec différents compilateurs et/ou différents niveaux d’optimisation. En particulier, nous illustrerons l’apport de notre approche et de ses métriques à l’analyse de vulnérabilités, l’analyse des effets des optimisations de code de compilateurs ainsi qu’à la comparaison de différentes protections combinées ou non sur des codes protégés au niveau du code source.</p>
+      </div> <!-- /content -->
+    </div> <!-- /main -->
+
+    <footer id="footer">
+      <div class="footer">
+        <p style="text-align:center; font-size:75%">
+          Site generated by <a href="https://jaspervdj.be/hakyll">Hakyll</a>
+          and <a href="https://pandoc.org">pandoc</a>
+        </p>
+
+        <p style="text-align:center; font-size:75%">
+          
+          <a href="https://github.com/jaif2019/website/commits/master">
+            Page last modified
+            
+            by commit 68312e5,
+            
+            Fri, 6 Sep 2019 09:37:44 +0200
+          </a>
+          
+        </p>
+        <br>
+      </div>
+    </footer>
+
+
+    <script src="./assets/js/ui.js"></script>
+
+  </body>
+</html>
