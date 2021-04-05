@@ -1,2 +1,6 @@
 User-agent: *
-Sitemap: https://jaif2020.github.io/sitemap.xml
+Sitemap: https://jaif-fr.github.io/sitemap.xml
+# Sitemap: https://jaif-fr.github.io/2018/sitemap.xml # TODO
+Sitemap: https://jaif-fr.github.io/2019/sitemap.xml
+Sitemap: https://jaif-fr.github.io/2020/sitemap.xml
+Sitemap: https://jaif-fr.github.io/2021/sitemap.xml
