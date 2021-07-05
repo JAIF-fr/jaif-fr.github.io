@@ -46,6 +46,135 @@
             <p>Le programme de la journée est aménagé pour maximiser les interactions entre les participants. Les présentations de chaque session auront vocation à être ouvertes aux interactions avec l’assemblée, et un temps de questions et de discussions sera réservé à la fin de chaque session.</p>
 <p>La journée est organisée en <strong>présentiel</strong> à l’ENS, et en <strong>virtuel</strong> sur Zoom. Un mail contenant les informations de connexion sera envoyé quelques jours avant la journée à tous les participants inscrits.</p>
 <p><strong>Le programme de la journée sera précisé dans les semaines à venir.</strong></p>
+<table>
+<tbody>
+<tr class="odd">
+<td>09h50</td>
+<td></td>
+<td>Ouverture de la salle</td>
+</tr>
+<tr class="even">
+<td>10h00</td>
+<td>Guillaume Bouffard</td>
+<td><strong>Ouverture de la journée</strong></td>
+</tr>
+<tr class="odd">
+<td>10h10</td>
+<td><strong>Session 1</strong></td>
+<td><strong>Outils d’évaluation de la sécurité</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#deferriere">François de Ferrière</a></td>
+<td>Software Fault Injection Simulation</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#vinet">Guillaume Vinet</a></td>
+<td>L’émulation post-silicon est-elle pertinente pour pré-qualifier un code?</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#kazemi">Zahra Kazemi</a></td>
+<td>Hardware Security Evaluation of Embedded Applications Against Fault Injection Attack</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Q&amp;R</td>
+</tr>
+<tr class="even">
+<td>11h25</td>
+<td></td>
+<td><em>Pause</em></td>
+</tr>
+<tr class="odd">
+<td>11h55</td>
+<td><strong>Session 2</strong></td>
+<td><strong>Attaques et contre-mesures</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#zgheib">Anthony Zgheib</a></td>
+<td>Specific Verification System for Open-Source ISA RISC-V Cores</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#chamelot">Thomas Chamelot</a></td>
+<td>SCI-FI – Control Signal, Code, and Control Flow Integrity against Fault Injection Attacks</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#tasso">Élise Tasso</a></td>
+<td>Resistance of Isogeny-Based Cryptographic Implementations to a Fault Attack</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Q&amp;R</td>
+</tr>
+<tr class="even">
+<td>13h10</td>
+<td></td>
+<td><em>Déjeuner</em></td>
+</tr>
+<tr class="odd">
+<td>14h30</td>
+<td><strong>Session 3</strong></td>
+<td><strong>Injection de fautes électromagnétiques #1</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#esteves">José Lopes Esteves</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#toulemont">Julien Toulemont</a></td>
+<td>About the scaling of EMFI probes</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Q&amp;R</td>
+</tr>
+<tr class="odd">
+<td>15h20</td>
+<td></td>
+<td><em>Pause</em></td>
+</tr>
+<tr class="even">
+<td>15h50</td>
+<td><strong>Session 4</strong></td>
+<td><strong>Injection de fautes électromagnétiques #2</strong></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#trabelsi">Oualid Trabelsi</a></td>
+<td>Méthodes pour la modélisation des injections de faute électromagnétiques</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#gaine">Clément Gaine</a></td>
+<td>EMFI sur SoC</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Q&amp;R</td>
+</tr>
+<tr class="even">
+<td>16h40</td>
+<td>Comité d’organisation</td>
+<td><strong>Clôture de la journée</strong></td>
+</tr>
+<tr class="odd">
+<td>17h40</td>
+<td></td>
+<td>Fin de la journée</td>
+</tr>
+</tbody>
+</table>
 <h3 id="tasso">Resistance of Isogeny-Based Cryptographic Implementations to a Fault Attack</h3>
 <p><strong>Élise Tasso</strong> <em>(CEA-Leti),</em> <em>Luca De Feo (IBM Research),</em> <em>Nadia El Mrabet (Mines Saint-Étienne),</em> <em>Simon Pontié (CEA-Leti)</em></p>
 <p>The threat of quantum computers has sparked the development of a new kind of cryptography to resist their attacks. Isogenies between elliptic curves are one of the tools used for such cryptosystems. They are championed by SIKE (Supersingular isogeny key encapsulation), an “alternate candidate” of the third round of the NIST Post-Quantum Cryptography Standardization Process. While all candidates are believed to be mathematically secure, their implementations may be vulnerable to hardware attacks. In this work we investigate for the first time whether Ti’s 2017 theoretical fault injection attack is exploitable in practice. We also examine suitable countermeasures. As controlling precisely the time for the fault injection is not necessary in this attack, it is possible to choose a system on chip (SoC) as the target. Indeed, SoCs are known for their poorly predictable latency of execution. We manage to recover the secret thanks to electromagnetic fault injection on a SoC with four Cortex-A53 cores using a correct and an altered public key generation. Moreover we propose a suitable countermeasure to detect faults that has a low overhead as it takes advantage of a redundancy already present in SIKE implementations.</p>
@@ -79,7 +208,7 @@
 <li>Changing the return address for a return instruction [return-oriented programming (ROP) attacks].</li>
 </ul>
 <p>Our perspective is to upgrade this solution to verify all the program code executed instructions and check that they are unaltered within the core’s pipeline against these attacks. This is known as verifying the Control Flow and Execution Integrity (CFEI) of the program. This research is carried out in the framework of the ANR COFFI project (ANR-18-CE39-0003).</p>
-<h3 id="chamelot">SCI-FI - Control Signal, Code, and Control Flow Integrity against Fault Injection Attacks</h3>
+<h3 id="chamelot">SCI-FI – Control Signal, Code, and Control Flow Integrity against Fault Injection Attacks</h3>
 <p><strong>Thomas Chamelot</strong> <em>(CEA-List),</em> <em>Damien Couroussé (CEA-List),</em> <em>Karine Heydemann (Sorbonne Université, LIP6)</em></p>
 <p>Fault injection attacks are known to be able to tamper with the code and the control flow of a program. Several counter-measures have been proposed to thwart such attacks [1,2,4,5]. However, recent work highlights that some vulnerabilities exist in the microarchitecture [3], suggesting that the whole pipelined execution of instructions inside the processor also needs to be protected. Such execution integrity is not covered by state-of-the-art approaches.</p>
 <p>We present SCI-FI, a counter-measure against fault injection attacks that guarantees simultaneously code integrity, control flow integrity and execution integrity. SCI-FI is a mixed hardware and software counter-measure. It combines sequentially two techniques: a signature-based approach and a duplication-based one. Code integrity and control flow integrity are ensured by the signature-based approach, which needs compiler support as well as additional custom instructions. The duplication-based approach guarantees execution integrity until the end of the execution pipeline. The security level provided by SCI-FI highly depends on the signature function as well as the size of the reference signatures. SCI-FI can be implemented with several signature functions, as the properties of the signature function imply a trade off between security (e.g., number of bit flips that can be detected) and silicon area overhead. It may also impact code size and code slowdown. We also illustrate how signature constructs based on cryptography can also support other security properties, such as authentication.</p>
@@ -120,9 +249,9 @@
           <a href="https://github.com/jaif-fr/2021-src/commits/deploy">
             Page last modified
             
-            by commit 2cd9060,
+            by commit 3d5cdeb,
             
-            Fri, 2 Jul 2021 10:36:49 +0200
+            Mon, 5 Jul 2021 18:02:01 +0200
           </a>
           
         </p>
