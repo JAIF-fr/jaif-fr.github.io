@@ -233,10 +233,10 @@
 </ol>
 <p>Nous détaillons ensuite les résultats obtenus en appliquant les méthodes de modélisation à deux microcontrôleurs 32 bits différents, en utilisant deux plate-formes EMFI aux propriétés distinctes. Un des résultats les plus importants est qu’une seule injection peut fauter plusieurs instructions successives, ce qui remet en question la sécurité des contre-mesures protégeant vis-à-vis d’un saut unique d’instruction. Pour ces dernières, nous exposons toute une série de vulnérabilités, et proposons des solutions pour les corriger. Pour terminer, nous considérons les tirs multiples dans le temps, et montrons que près de 200 instructions successives peuvent être effacées avec un taux de succès de 50 %.</p>
 <h3 id="vinet">l’émulation post-silicon est-elle pertinente pour pré-qualifier un code?</h3>
-<p><strong>Guillaume Vinet</strong> <em>(eShard)</em></p>
-<p>Dans le cadre du projet CSAFE+ (Circuits sécurisés contre les attaques par injection de fautes électromagnétique avancée), eShard a développé un outil de simulation et d’injection de faute post-silicon : esFaulter. L’intérêt de cette simulation est double. Le premier est de pré-qualifier le code en amont d’une campagne de test sur la cible matérielle, campagne qui peut s’avérer longue et complexe à mettre en place. Le deuxième bénéfice réside dans le fait de permettre une interprétation des fautes obtenues sur la cible finale dans l’optique d’itérer les corrections jusqu’à obtenir une protection contre les fautes efficace.</p>
+<p><em>Lionel Rivière (eShard),</em> <em>Aurélien Vasselle (eShard),</em> <strong>Guillaume Vinet</strong> <em>(eShard)</em></p>
+<p>Dans le cadre du projet CSAFE+ (Circuits sécurisés contre les attaques par injection de fautes électromagnétique avancée), eShard a développé un outil de simulation et d’injection de faute post-silicon : esFirmware. L’intérêt de cette simulation est double. Le premier est de pré-qualifier le code en amont d’une campagne de test sur la cible matérielle, campagne qui peut s’avérer longue et complexe à mettre en place. Le deuxième bénéfice réside dans le fait de permettre une interprétation des fautes obtenues sur la cible finale dans l’optique d’itérer les corrections jusqu’à obtenir une protection contre les fautes efficace.</p>
 <p>De nombreux paramètres entrent en jeu lors de la simulation (modèle de faute utilisé, élément à attaquer…), une méthodologie d’analyse est donc indispensable pour profiter des bienfaits de cette approche. Cependant, même avec une bonne stratégie, une question importante se pose : l’émulation post-silicon est-elle pertinente pour pré-qualifier un code ?</p>
-<p>Pour répondre à cette problématique, nous avons, dans un premier temps, collecté des données réelles de perturbation en attaquant avec succès une implémentation logicielle d’un AES embarquée sur un System-on-Chip (SoC) moderne basé sur une architecture ARM A-53 via des attaques par perturbation. Nous avons ensuite appliqué la méthodologie en utilisant esFaulter sur ce bout de code afin d’interpréter les fautes obtenues. Nous avons ensuite comparé les deux campagnes afin d’apporter des réponses sur la pertinence et les limites d’une pré-qualification par simulation.</p>
+<p>Pour répondre à cette problématique, nous avons, dans un premier temps, collecté des données réelles de perturbation en attaquant avec succès une implémentation logicielle d’un AES embarquée sur un System-on-Chip (SoC) moderne basé sur une architecture ARM A-53 via des attaques par perturbation. Nous avons ensuite appliqué la méthodologie en utilisant esFirmware sur ce bout de code afin d’interpréter les fautes obtenues. Nous avons ensuite comparé les deux campagnes afin d’apporter des réponses sur la pertinence et les limites d’une pré-qualification par simulation.</p>
       </div> <!-- /content -->
     </div> <!-- /main -->
 
@@ -252,9 +252,9 @@
           <a href="https://github.com/jaif-fr/2021-src/commits/deploy">
             Page last modified
             
-            by commit 0199efb,
+            by commit 082c0dc,
             
-            Tue, 14 Sep 2021 13:54:40 +0200
+            Tue, 21 Sep 2021 17:47:44 +0200
           </a>
           
         </p>
