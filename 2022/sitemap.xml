@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://jaif.io/2022/cfp.html</loc>
+        <lastmod>Wed, 4 May 2022 15:06:16 +0200</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://jaif.io/2022/index.html</loc>
+        <lastmod>Wed, 4 May 2022 15:06:16 +0200</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://jaif.io/2022/infos-pratiques.html</loc>
+        <lastmod>Wed, 4 May 2022 15:06:16 +0200</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://jaif.io/2022/inscription.html</loc>
+        <lastmod>Wed, 4 May 2022 15:06:16 +0200</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://jaif.io/2022/programme.html</loc>
+        <lastmod>Wed, 4 May 2022 15:06:16 +0200</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
