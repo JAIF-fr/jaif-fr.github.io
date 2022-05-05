@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://jaif.io/sitemap.xml
+Sitemap: https://jaif.io/2020/sitemap.xml
