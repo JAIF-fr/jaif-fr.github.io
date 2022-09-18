@@ -4,3 +4,4 @@ Sitemap: https://jaif.io/sitemap.xml
 Sitemap: https://jaif.io/2019/sitemap.xml
 Sitemap: https://jaif.io/2020/sitemap.xml
 Sitemap: https://jaif.io/2021/sitemap.xml
+Sitemap: https://jaif.io/2022/sitemap.xml
