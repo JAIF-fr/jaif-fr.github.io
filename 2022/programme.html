@@ -128,7 +128,7 @@
 </tr>
 <tr class="even">
 <td></td>
-<td><a href="#dumont">Matthieu Dumont</a></td>
+<td><a href="#dumont">Mathieu Dumont</a></td>
 <td>Caractérisation de l’intégrité de réseaux de neurones embarqués face aux attaques par injection de fautes Laser</td>
 <td></td>
 </tr>
@@ -158,7 +158,7 @@
 </tr>
 <tr class="odd">
 <td></td>
-<td><a href="#boher">Noémie Boher</a> -</td>
+<td><a href="#boher">Noémie Beringuier-Boher</a></td>
 <td>A Fast Characterization Method for Semi-invasive Fault Injection Attacks</td>
 <td></td>
 </tr>
@@ -203,26 +203,37 @@
 <p>Paul Grandamme – Laboratoire Hubert Curien : Attaque laser de primitives de sécurité non alimentées</p>
 <p>Nasr-Eddine Ouldei Tebina – TIMA : X-Ray Fault Injection: Reviewing Defensive Approaches from a Security Perspective</p>
 <p>tbd – Eshard : Fault Injection Attack on Modern SoCs</p>
+<p><a href="#tollec">Simon Tollec</a> - CEA-List : Exploration of Fault Effects on Formal RISC-V Microarchitecture Models | |</p>
 <h3 id="coulon">Attaque en fautes du processeur RISC-V CVA6</h3>
-<p><strong>Jean-Roch Coulon</strong> <em>(INVIA / Thales DIS)</em></p>
+<p><strong>Jean-Roch Coulon</strong> (INVIA / Thales DIS)</p>
 <h3 id="giraud">L’attaque en faute : la bête noire des boîtes blanches</h3>
-<p><strong>Vincent Giraud</strong> - <em>(ENS &amp; Ingenico)</em>,</p>
+<p><strong>Vincent Giraud</strong> (ENS, Ingenico), Guillaume Bouffard (ENS, ANSSI)</p>
+<p><strong>Résumé</strong>. Pour réaliser des opérations sensibles, il est courant d’utiliser des composants sécurisés : grâce à leurs diverses protections, ils peuvent faire office de racine de confiance. Cependant, on peut être contraint d’utiliser des solutions alternatives dans la mesure où ils ne sont pas disponibles dans tous les systèmes d’information. Les industriels déploient alors une approche basée sur l’obscurcissement logiciel, moins sécurisée que celles basées sur un composant matériel. La cryptographie en boîte blanche en fait partie : chaque étape intermédiaire est précalculée et masquée, en conservant malgré tout la sémantique globale. Bien qu’elle soit purement logicielle, des attaques matérielles ont pu y être transposées. En instrumentant un programme, on peut reproduire des attaques par perturbation en y créant des états inattendus.</p>
+<p>Les besoins de l’industrie tendant à se diversifier, la recherche met aujourd’hui l’accent sur des fonctionnalités telles que la résistance aux attaques quantiques et les possibilités asymétriques des schémas cryptographiques. Ces aspects font ressurgir des spécifications comme celle de McEliece. Dans nos travaux, nous étudions la sécurité d’une boîte blanche cryptographique implémentant l’algorithme McEliece et sa résistance aux attaques dites «matérielles». Dans cet exposé, nous questionnerons également l’applicabilité dans le monde logiciel des contre-mesures existantes utilisées dans les composants matériels.</p>
+<p><strong>Bio</strong>. Vincent Giraud est doctorant à l’École Normale Supérieure (ENS) en sécurité informatique, au service d’Ingenico. Après des études à l’Institut National des Sciences Appliquées (INSA) de Rennes et au Rochester Institute of Technology (RIT), il rejoint l’Agence Nationale de la Sécurité des Systèmes d’Information (ANSSI) pour un stage de fin d’étude sous la tutelle de Guillaume Bouffard, basé sur la sécurité applicative des cartes à puce. Il réalise actuellement sa thèse sur la sécurisation des processus dans des environnements non contrôlés chez Ingenico.</p>
 <h3 id="toward-a-low-cost-methodology-for-em-fault-emulation-on-fpga">Toward a Low-Cost Methodology for EM Fault Emulation on FPGA</h3>
-<p><strong>Paolo Maistri</strong> - <em>(CNRS TIMA)</em>,</p>
+<p><strong>Paolo Maistri</strong> (CNRS, TIMA),</p>
 <h3 id="tollec">Exploration of Fault Effects on Formal RISC-V Microarchitecture Models</h3>
-<p><strong>Simon Tollec</strong> - <em>(CEA-List)</em>,</p>
+<p><strong>Simon Tollec</strong> (CEA-List), Mihail Asavoae (CEA-List), Damien Couroussé (CEA-List), Karine Heydemann (Sorbonne Univ., INVIA / Thales DIS), Mathieu Jan (CEA-List)</p>
+<p><strong>résumé</strong>. Understanding what happens in a circuit after a fault injection and analyzing the consequences is a long and meticulous process. Usually, we cannot access the microarchitecture’s internal state, and fault models at the ISA level are used since we can only retrieve limited information like the Memory or the Register File contents. However, recent work has highlighted that some observed effects are difficult to explain or to model at the ISA level without any knowledge of the microarchitecture. The presentation will introduce a formal verification-based workflow for modeling software/hardware systems in order to explore the effects of fault injections and evaluate the system’s robustness to these attacks. We illustrate this workflow on a PIN authentication code embedding different software countermeasures and on two implementations of the RISC-V CV32E40P core: the original implementation and a protected one. We expose various vulnerabilities and also confirm the effectiveness of the proposed countermeasures.</p>
+<p><strong>bio</strong>. Simon Tollec obtained his Master of Science in the engineering of Telecom Paris in 2021 in the fields of embedded systems, data science, and network security. He is currently completing his Ph.D. in the French Alternative Energies and Atomic Energy Commission (CEA) on the subject of the formal verification of security properties on Software/Hardware systems under the influence of faults injection.</p>
 <h3 id="alshaer">Variable-Length Instruction Set: Feature or Bug?</h3>
-<p><strong>Ihab Al Shaer</strong> - <em>(Grenoble-INP LCIS)</em></p>
+<p><strong>Ihab Al Shaer</strong> (Grenoble-INP LCIS) Brice Colombier (TIMA), Christophe Deleuze (LCIS), Vincent Beroulle (LCIS), Paolo Maistri (TIMA),</p>
+<p><strong>résumé</strong>. With the increasing complexity of embedded systems, the use of variable-length instruction sets became essential, in order to achieve higher code density and better performance. However, security aspects must also be considered, in particular with the continuous improvement of attack techniques and equipment.</p>
+<p>Hardware designers and software developers lack accurate hardware and software fault models to evaluate the vulnerabilities of their designs or codes, in presence of fault attacks, especially with the increasing complexity of microprocessors’ architectures.</p>
+<p>In this work, which aims at providing realistic fault models, clock glitch fault injection campaigns, using the ChiWhipserer environment, have been performed. The objective behind these experiments is to provide proper characterization, at the instruction set architecture (ISA) level, for several faulty behaviors that can be observed experimentally when targeting a processor running a variable-length instruction set. Such characterization would help in proposing suitable fault models.</p>
+<p><strong>bio</strong>. Ihab Alshaer received B.Eng. degree in computer systems engineering from Birzeit University, Palestine in 2015. He worked as a teaching assistant at the department of computer science at Birzeit University till 2018. He received his Master 1 degree in informatics and Master 2 degree in cybersecurity from the University of Grenoble Alpes (UGA), France in 2019 and 2020 respectively. He is currently a Ph.D. student at UGA. He is working under the CLAM project in a joint position at LCIS and TIMA.</p>
 <h3 id="fanjas">Méthode combinée d’Injection de faute et d’analyse Side-Channel temps réel pour contourner le Secure-Boot d’Android</h3>
-<p>Clément Fanjas - <em>(CEA-Leti)</em>, <strong>Simon Pontié</strong> - <em>(CEA-Leti)</em>,</p>
+<p>Clément Fanjas (CEA-Leti), <strong>Simon Pontié</strong> (CEA-Leti),</p>
 <h3 id="dumont">Caractérisation de l’intégrité de réseaux de neurones embarqués face aux attaques par injection de fautes Laser</h3>
-<p><strong>Matthieu Dumont</strong> - <em>(CEA-Leti)</em>,</p>
+<p><strong>Mathieu Dumont</strong> (CEA-Leti), Pierre-Alain Moellic (CEA-Leti), Jean-Max Dutertre (MSE, Centre Microélectronique de Provence), Kévin Hector (CEA-Leti)</p>
+<p><strong>bio</strong>. Mathieu Dumont a terminé sa thèse en octobre 2020 sur la Modélisation de l’injection de faute électromagnétiques sur circuit intégré sécurisés et contre-mesures, à l’Université de Montpellier (LIRMM, STMicroelectronics).Il occupe un post-doc au sein du CEA-Leti, dans l’équipe commune de recherche entre le CEA-Leti et l’Ecole des Mines de Saint-Etienne au Centre de Microélectronique de Provence (CMP). Dans le cadre du projet Européen InSecTT, de l’IRT Nanoelec PULSE, ses travaux portent sur la sécurité de l’Intelligence Artificielle embarquée et plus spécifiquement sur les attaques par injection de fautes laser sur des réseaux de neurones embarqués sur microcontrôleur 32-bit.</p>
 <h3 id="anceau">Faulting real-world devices with X-Rays beams</h3>
-<p><strong>Stephanie Anceau</strong>, <em>(CEA-Leti-Cesti)</em>,</p>
+<p><strong>Stephanie Anceau</strong> (CEA-Leti/Cesti), Laurent Maingault (CEA-Leti/Cesti), Luc Salvo, Sophie Bouat, Remi Granger, Pierre Lhuissier</p>
 <h3 id="maistri">Toward a Low-Cost Methodology for EM Fault Emulation on FPGA</h3>
-<p><strong>Paolo Maistri</strong> - <em>(CNRS - TIMA)</em>,</p>
+<p><strong>Paolo Maistri</strong> (CNRS, TIMA),</p>
 <h3 id="boher">A Fast Characterization Method for Semi-invasive Fault Injection Attacks</h3>
-<p><strong>Noémie Boher</strong> - <em>(Brightsight)</em>,</p>
+<p>Lichao Wu (Delft University of Technology), Gerard Ribera (Independent Researcher), <strong>Noémie Beringuier-Boher</strong> (Brightsight), Stjepan Picek (Delft University of Technology),</p>
       </div> <!-- /content -->
     </div> <!-- /main -->
 
@@ -238,9 +249,9 @@
           <a href="https://github.com/jaif-fr/2022-src/commits">
             Page last modified
             
-            by commit 1bb3b4d,
+            by commit 1ba1d52,
             
-            Mon, 26 Sep 2022 22:33:01 +0200
+            Sat, 1 Oct 2022 17:05:50 +0200
           </a>
           
         </p>
