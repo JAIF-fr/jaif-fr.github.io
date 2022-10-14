@@ -206,13 +206,13 @@
 <p><a href="#tollec">Simon Tollec</a> - CEA-List : Exploration of Fault Effects on Formal RISC-V Microarchitecture Models</p>
 <h3 id="coulon">Attaque en fautes du processeur RISC-V CVA6</h3>
 <p><strong>Jean-Roch Coulon</strong> (INVIA / Thales DIS)</p>
+<p><strong>Résumé</strong>. Après une rapide présentation de l’architecture du processeur RISC-V open source CVA6, nous aborderons sa vulnérabilité aux injections de faute « théorique » et résultant d’injection de fautes par simulation digitale. Nous discuterons ensuite des problématique liées à la sécurité d’implémentation de processeurs open source, et ferons part de notre expérience en tant que division habituée à sécuriser des processeurs.</p>
+<p><strong>Bio</strong>. Jean Roch Coulon est architecte RISC-V au sein du groupe Thales en France, il a ajouté de la sécurité dans les implémentations ARM, SPARC, propriétaires et maintenant RISC-V. Expert en processeur, chaîne d’outils, sécurité, cryptographie ou densité de taille de code. Ses principales contributions à RISC-V sont la version 32 bits de CVA6 (CV32A6), l’implémentation et la vérification de CV-X-IF. Il est un committer du groupe OpenHW, révise et fusionne les pull requests CVA6 et CORE-V-VERIF.</p>
 <h3 id="giraud">L’attaque en faute : la bête noire des boîtes blanches</h3>
 <p><strong>Vincent Giraud</strong> (ENS, Ingenico), Guillaume Bouffard (ENS, ANSSI)</p>
 <p><strong>Résumé</strong>. Pour réaliser des opérations sensibles, il est courant d’utiliser des composants sécurisés : grâce à leurs diverses protections, ils peuvent faire office de racine de confiance. Cependant, on peut être contraint d’utiliser des solutions alternatives dans la mesure où ils ne sont pas disponibles dans tous les systèmes d’information. Les industriels déploient alors une approche basée sur l’obscurcissement logiciel, moins sécurisée que celles basées sur un composant matériel. La cryptographie en boîte blanche en fait partie : chaque étape intermédiaire est précalculée et masquée, en conservant malgré tout la sémantique globale. Bien qu’elle soit purement logicielle, des attaques matérielles ont pu y être transposées. En instrumentant un programme, on peut reproduire des attaques par perturbation en y créant des états inattendus.</p>
 <p>Les besoins de l’industrie tendant à se diversifier, la recherche met aujourd’hui l’accent sur des fonctionnalités telles que la résistance aux attaques quantiques et les possibilités asymétriques des schémas cryptographiques. Ces aspects font ressurgir des spécifications comme celle de McEliece. Dans nos travaux, nous étudions la sécurité d’une boîte blanche cryptographique implémentant l’algorithme McEliece et sa résistance aux attaques dites «matérielles». Dans cet exposé, nous questionnerons également l’applicabilité dans le monde logiciel des contre-mesures existantes utilisées dans les composants matériels.</p>
 <p><strong>Bio</strong>. Vincent Giraud est doctorant à l’École Normale Supérieure (ENS) en sécurité informatique, au service d’Ingenico. Après des études à l’Institut National des Sciences Appliquées (INSA) de Rennes et au Rochester Institute of Technology (RIT), il rejoint l’Agence Nationale de la Sécurité des Systèmes d’Information (ANSSI) pour un stage de fin d’étude sous la tutelle de Guillaume Bouffard, basé sur la sécurité applicative des cartes à puce. Il réalise actuellement sa thèse sur la sécurisation des processus dans des environnements non contrôlés chez Ingenico.</p>
-<h3 id="toward-a-low-cost-methodology-for-em-fault-emulation-on-fpga">Toward a Low-Cost Methodology for EM Fault Emulation on FPGA</h3>
-<p><strong>Paolo Maistri</strong> (CNRS, TIMA),</p>
 <h3 id="tollec">Exploration of Fault Effects on Formal RISC-V Microarchitecture Models</h3>
 <p><strong>Simon Tollec</strong> (CEA-List), Mihail Asavoae (CEA-List), Damien Couroussé (CEA-List), Karine Heydemann (Sorbonne Univ., INVIA / Thales DIS), Mathieu Jan (CEA-List)</p>
 <p><strong>résumé</strong>. Understanding what happens in a circuit after a fault injection and analyzing the consequences is a long and meticulous process. Usually, we cannot access the microarchitecture’s internal state, and fault models at the ISA level are used since we can only retrieve limited information like the Memory or the Register File contents. However, recent work has highlighted that some observed effects are difficult to explain or to model at the ISA level without any knowledge of the microarchitecture. The presentation will introduce a formal verification-based workflow for modeling software/hardware systems in order to explore the effects of fault injections and evaluate the system’s robustness to these attacks. We illustrate this workflow on a PIN authentication code embedding different software countermeasures and on two implementations of the RISC-V CV32E40P core: the original implementation and a protected one. We expose various vulnerabilities and also confirm the effectiveness of the proposed countermeasures.</p>
@@ -257,9 +257,9 @@
           <a href="https://github.com/jaif-fr/2022-src/commits">
             Page last modified
             
-            by commit 77c2f0f,
+            by commit a943292,
             
-            Tue, 11 Oct 2022 15:07:21 +0200
+            Fri, 14 Oct 2022 22:01:52 +0200
           </a>
           
         </p>
