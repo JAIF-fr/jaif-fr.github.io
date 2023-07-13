@@ -74,7 +74,7 @@
 </tr>
 <tr class="even">
 <td></td>
-<td>Amélie Marotta</td>
+<td><a href="#marotta">Amélie Marotta</a></td>
 <td>Characterizing and Modeling Clock-Glitch Fault Injection</td>
 </tr>
 <tr class="odd">
@@ -89,7 +89,7 @@
 </tr>
 <tr class="odd">
 <td></td>
-<td>Antoine Gicquel</td>
+<td><a href="#gicquel">Antoine Gicquel</a></td>
 <td>SAMVA: Static Analysis for Multi-Fault Attack Paths Determination</td>
 </tr>
 <tr class="even">
@@ -99,7 +99,7 @@
 </tr>
 <tr class="odd">
 <td></td>
-<td>Étienne Boespflug</td>
+<td><a href="#boespflug">Étienne Boespflug</a></td>
 <td>Placement of software countermeasures: a compositional approach</td>
 </tr>
 <tr class="even">
@@ -197,6 +197,21 @@ La présentation que nous proposons porte sur mon sujet de thèse : L’injectio
 <p>Enfin, nous présentons une méthode permettant de simuler et d’évaluer le comportement électrique des circuits intégrés soumis à la BBI. Pour ce faire, nous avons élaboré des modèles électriques élémentaires, qui, lorsqu’ils sont multipliés et connectés entre eux, permettent de modéliser des circuits intégrés et de comprendre les mécanismes sous-jacents impliqués dans la pratique de la BBI.</p>
 <p><strong>Bio</strong>.
 À l’issue d’un baccalauréat scientifique, j’ai intégré l’école d’ingénieur Polytech Montpellier. Diplômé en 2020 d’un diplôme d’ingénieur en électronique et informatique industrielle, j’ai poursuivi, à la suite de mes études, un doctorat au sein du Laboratoire d’Informatique, de Robotique et de Microélectronique de Montpellier (LIRMM). Le sujet de celui-ci est l’injection de fautes par impulsion dans le substrat, plus particulièrement la modélisation et la meilleure compréhension de cette méthode.</p>
+<h3 id="marotta">Characterizing and Modeling Clock-Glitch Fault Injection</h3>
+<p><strong>Amélie Marotta</strong> (Inria Rennes)</p>
+<p><strong>Résumé</strong>.
+Fault injection techniques are numerous, including laser, electromagnetic fault injection (EMFI), power glitch, and clock glitch. The physical effects that are caused from fault injection result in fault models that can be interpreted at three different abstraction levels: physical (impact on logic gates and flip-flop), register-transfer (bit-set, bit-reset) and microarchitectural (impact on the execution of programs). To fully characterize the effects of fault injection, it is important to know all three abstractions levels and how they are linked to each other.</p>
+<p>In this work, we focus on a particular type of clock glitch fault injection. We use TRAITOR, a many-fault injection platform, which uses a specific pertubation on the clock signal to induce incorrect behaviors in the target. Some observations of these behaviours at a microarchitectural level have been made, but until now, lower level fault models haven’t been proposed.</p>
+<p>We observe that the sampling process of registers can be compromised by TRAITOR’s glitched clock. While some fault models already exist, they do not explain this behaviour. Simulation- based investigations were done to characterize precisely when a register would latch or not depending on the glitched clock cycle shape. They revealed that the issue arises due to an insufficient energy supply on the clock port of the register. Besides, experiments were done on registers in FPGAs, to highlight that the hardware environment of the target system influences the fault results.</p>
+<p>During our presentation, we will introduce our approach to characterize the impact of TRAITOR on registers. We will present a new physical fault model which explains its effects.</p>
+<p><strong>Bio</strong>.
+Amélie Marotta is a second-year PhD student in the TARAN team at Inria laboratory of the University of Rennes, France. Her work focuses on understanding how fault injection (electromagnetic fault injection, clock glitch) affect hardware components on FPGA (in particular, registers). She is working under the supervision of Olivier Sentieys, Ronan Lashermes, Rachid Dafali and Guillaume Bouffard.</p>
+<h3 id="gicquel">SAMVA: Static Analysis for Multi-Fault Attack Paths Determination</h3>
+<p><strong>Antoine Gicquel</strong> (Univ Rennes, Inria, CNRS, IRISA, France)</p>
+<p><strong>Résumé</strong>.
+Multi-fault injection attacks are powerful since they allow to bypass software security mechanisms of embedded devices. Assessing the vulnerability of an application while considering multiple faults with various effects is an open problem due to the size of the fault space to explore. We propose SAMVA, a framework for efficiently searching vulnerabilities of applications in presence of multiple instruction-skip faults with various widths. SAMVA relies solely on static analysis to determine attack paths in a binary code. It is configurable with the fault injection capacity of the attacker and the attacker’s objective. We evaluate the proposed approach on eight PIN verification programs containing various software countermeasures. Our framework finds numerous attack paths, even for the most hardened version, in very limited time.</p>
+<p><strong>Bio</strong>.
+Antoine Gicquel is a second year Ph.D student in the PACAP team at Inria laboratory of the University of Rennes, France. His work focuses on vulnerability assessment for programs against fault injection attacks, specifically in a context of multiple faults. He is working under the supervision of Damien Hardy, Karine Heydemann and Erven Rohou.</p>
 <h3 id="ducousso">Adversarial Reachability for Program-level Security Analysis</h3>
 <p><strong>Soline Ducousso</strong> (Université Paris-Saclay, CEA, List, Saclay, France)</p>
 <p><strong>Résumé</strong>.
@@ -205,6 +220,15 @@ Hardware fault injection attacks are a powerful attack vector, disturbing the ex
 Our approach is based on a new symbolic exploration algorithm, namely adversarial symbolic execution, injecting faults in a forkless manner to prevent path explosion, together with optimizations dedicated to reducing the number of injections to consider while keeping the same attacker power. Experiments on representative benchmarks from fault injection show that our method significantly reduces the number of adversarial paths to explore. In addition, we demonstrate the interest and feasibility of our technique on the well-tested WooKey bootloader.</p>
 <p><strong>Bio</strong>.
 Soline Ducousso obtained her engineering degree from ENSTA Paris in 2020 in the fields of cybersecurity and software architecture, and a Master degree from Université Paris-Saclay the same year in theoretical computer science and formal methods. She is currently conducting her PhD at the LSL lab in the French Alternative Energies and Atomic Energy Commission (CEA), in association with VERMIAG lab in Université Grenoble Alpes. Her subject is moving code analysis from safety to security: taking the attacker into account.</p>
+<h3 id="boespflug">Placement of software countermeasures: a compositional approach</h3>
+<p><strong>Étienne Boespflug</strong> (Université de Grenoble Alpes – VERIMAG)</p>
+<p><strong>Résumé</strong>.
+Fault attacks consist of changing the program behavior by injecting faults at runtime in order to compromise expected security properties. Multiple fault attacks enable attackers to bypass the implemented protections.
+At the software level, protections primarily involve program transformations aimed at blocking or detecting attacks. We will specifically focus on countermeasures that operate at the granularity of an injection point for two LLVM-level fault models: test inversion (the ability to alter the branch taken by the program during a test) and data load mutation (changing the value during a load).
+We propose a compositional approach that consists of isolation analysis and a placement algorithm. Isolation analysis aims to reason about countermeasures outside of program context, providing guarantees about the adequacy of the protection scheme against a specific fault model. It also computes the “vulnerability level”, corresponding to the minimum number of faults required to produce an incorrect behavior on the protected IP with respect to a set of fault models (determining the attack surface of the countermeasures).
+Five placement algorithms are presented, relying on the vulnerability level and an exploration of attack paths in the program to produce a protected program. Each algorithm shows different complexity and robustness guarantees.</p>
+<p><strong>Bio</strong>.
+Etienne Boespflug is currently a post-doctoral researcher at VERIMAG. He completed a master’s degree in computer science and security at the University of Limoges and defended his thesis prepared at VERIMAG entitled “Tools for code and countermeasures analysis against multiple faults attacks” on 28/04/23.</p>
 <h3 id="iooss">Pew Pew, I’m root! De la caractérisation à l’exploitation: un voyage plein d’embûches</h3>
 <p><strong>Alexandre Iooss</strong> (ANSSI - Laboratoire Sécurité des Composants),
 Guillaume Bouffard (ANSSI - Laboratoire Architecures Matérielles et Logicielles)</p>
@@ -328,9 +352,9 @@ Paul Grandamme est doctorant au laboratoire Hubert Curien de l’Université Jea
           <a href="https://github.com/jaif-fr/2023-src/commits">
             Page last modified
             
-            by commit 8fa6126,
+            by commit 1d6fc42,
             
-            Thu, 6 Jul 2023 09:43:03 +0200
+            Thu, 13 Jul 2023 15:37:47 +0200
           </a>
           
         </p>
