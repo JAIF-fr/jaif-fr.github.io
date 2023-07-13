@@ -193,7 +193,7 @@ David Hély est enseignant-chercheur à Grenoble INP-UGA et effectue ses recherc
 <p><strong>Geoffrey Chancel</strong> (Université de Montpellier, LIRMM)</p>
 <p><strong>Résumé</strong>.
 La présentation que nous proposons porte sur mon sujet de thèse : L’injection de fautes par impulsion dans le substrat, aussi nommée en anglais Body Biasing Injection (BBI), abréviation que nous utiliserons dans la suite de ce document.</p>
-<p>Nous proposons de présenter les dernières avancées de nos travaux sur ce sujet, en particulier concernant les bonnes pratiques à adopter lors de la mise en place de la BBI. En effet, lors de nos études, nous nous sommes aperçus que pour accomplir des attaques par fautes grâce à cette méthode, il était nécessaire de prendre en compte de nombreux paramètres de la plateforme utilisée, comme la ligne de transmission, les interconnexions de masse entre les équipements, ou bien l’adaptation d’impédance du générateur d’impulsions. Nous proposons donc des améliorations de la pratique de la BBI. Grâce à ces dernières, nous sommes parvenus à mener une attaque par fautes sur un cœur AES 128 bits matériel, embarqué dans un microcontrôleur. L’attaque réalisée est fondée sur le modèle de faute mono bit de Giraud [1].</p>
+<p>Nous proposons de présenter les dernières avancées de nos travaux sur ce sujet, en particulier concernant les bonnes pratiques à adopter lors de la mise en place de la BBI. En effet, lors de nos études, nous nous sommes aperçus que pour accomplir des attaques par fautes grâce à cette méthode, il était nécessaire de prendre en compte de nombreux paramètres de la plateforme utilisée, comme la ligne de transmission, les interconnexions de masse entre les équipements, ou bien l’adaptation d’impédance du générateur d’impulsions. Nous proposons donc des améliorations de la pratique de la BBI. Grâce à ces dernières, nous sommes parvenus à mener une attaque par fautes sur un cœur AES 128 bits matériel, embarqué dans un microcontrôleur. L’attaque réalisée est fondée sur le modèle de faute mono bit de Giraud et al.</p>
 <p>Enfin, nous présentons une méthode permettant de simuler et d’évaluer le comportement électrique des circuits intégrés soumis à la BBI. Pour ce faire, nous avons élaboré des modèles électriques élémentaires, qui, lorsqu’ils sont multipliés et connectés entre eux, permettent de modéliser des circuits intégrés et de comprendre les mécanismes sous-jacents impliqués dans la pratique de la BBI.</p>
 <p><strong>Bio</strong>.
 À l’issue d’un baccalauréat scientifique, j’ai intégré l’école d’ingénieur Polytech Montpellier. Diplômé en 2020 d’un diplôme d’ingénieur en électronique et informatique industrielle, j’ai poursuivi, à la suite de mes études, un doctorat au sein du Laboratoire d’Informatique, de Robotique et de Microélectronique de Montpellier (LIRMM). Le sujet de celui-ci est l’injection de fautes par impulsion dans le substrat, plus particulièrement la modélisation et la meilleure compréhension de cette méthode.</p>
@@ -238,11 +238,11 @@ Les attaques par faute constituent un vecteur d’attaque semi-invasif puissant 
 d’exécution matérielle n’embarque pas de mécanismes de protection. Néanmoins
 ces attaques sont difficiles à mettre en place et les réussir nécessite trois étapes :
 caractériser les effets de la faute sur un échantillon du composant exécutant
-une application de profilage [4], utiliser ce modèle de faute sur l’application sensible (en simulation
-par exemple) afin de déterminer les chemins d’attaques possibles [2] et
-exploiter l’effet de la faute injectée sur le composant cible [3]. Dans la littérature,
+une application de profilage, utiliser ce modèle de faute sur l’application sensible (en simulation
+par exemple) afin de déterminer les chemins d’attaques possibles et
+exploiter l’effet de la faute injectée sur le composant cible. Dans la littérature,
 ce travail reste principalement porté sur la sécurité des implémentations cryptographiques
-[5,6] implémentées sur des micro-contrôleurs.</p>
+implémentées sur des micro-contrôleurs.</p>
 <p>Cependant, avec la démocratisation des appareils portables tels
 que les smartphones, la menace des attaques semi-invasives devient crédible pour
 des applications plus variées. Nous pensons que pour protéger efficacement ces
@@ -253,22 +253,14 @@ sur les logiciels haut niveau.</p>
 la caractérisation des effets d’une faute électromagnétique à l’exploitation sur
 une application complexe sensible. Pour ce faire, nous examinerons la sécurité
 de l’implémentation de l’application sudo intégrée dans la distribution GNU/Linux
-Raspberry Pi OS Lite (<a href="https://www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a>) pour Raspberry Pi 4.
-Dans ce travail, nous montrons comment il est possible de transposer une caractérisation
+Raspberry Pi OS Lite pour Raspberry Pi 4.
+Nous montrons comment il est possible de transposer une caractérisation
 de la sensibilité à une application logicielle complexe, et comment, en l’absence de protections,
 il est possible de réaliser efficacement une attaque permettant l’escalation de privilèges.
-En complément de l’approche présentée dans [1], notre méthode est suffisamment efficace pour
+Notre méthode est suffisamment efficace pour
 forcer l’authentification via l’application sudo sans la modifier au préalable.</p>
-<ol type="1">
-<li><p>Gaine, C., Aboulkassimi, D., Pontié, S., Nikolovski, J., Dutertre, J. : Electromagnetic Fault Injection as a New Forensic Approach for SoCs. In : 12th IEEE International Workshop on Information Forensics and Security, WIFS 2020, New York City, NY, USA, December 6-11, 2020. pp. 1–6. IEEE (2020).</p></li>
-<li><p>Gicquel, A., Hardy, D., Heydemann, K., Rohou, E. : SAMVA : Static Analysis for Multi-fault Attack Paths Determination. In : Kavun, E.B., Pehl, M. (eds.) Constructive Side-Channel Analysis and Secure Design - 14th International Workshop, COSADE 2023, Munich, Germany, April 3-4, 2023, Proceedings. Lecture Notes in Computer Science, vol. 13979, pp. 3–22. Springer (2023). <a href="https://doi.org/10.1007/978-3-031-29497-6_1">https://doi.org/10.1007/978-3-031-29497-6_1</a></p></li>
-<li><p>Timmers, N., Mune, C. : Escalating Privileges in Linux Using Voltage Fault Injection. In : 2017 Workshop on Fault Diagnosis and Tolerance in Cryptography, FDTC 2017, Taipei, Taiwan, September 25, 2017. pp. 1–8. IEEE Computer Society (2017).</p></li>
-<li><p>Trouchkine, T., Bouffard, G., Clédière, J. : EM Fault Model Characterization on SoCs : From Different Architectures to the Same Fault Model. In : 18th Workshop on Fault Detection and Tolerance in Cryptography, FDTC 2021, Milan, Italy, September 17, 2021. pp. 31–38. IEEE (2021).</p></li>
-<li><p>Trouchkine, T., Bukasa, S.K., Escouteloup, M., Lashermes, R., Bouffard, G. : Electromagnetic fault injection against a complex CPU, toward new micro-architectural fault models. Journal of Cryptographic Engineering 11(4), 353–367 (2021).</p></li>
-<li><p>Zhang, F., Zhang, Y., Jiang, H., Zhu, X., Bhasin, S., Zhao, X., Liu, Z., Gu, D., Ren, K. : Persistent Fault Attack in Practice. IACR Transactions on Cryptographic Hardware and Embedded Systems 2020(2), 172–195 (2020).</p></li>
-</ol>
-<p><strong>Bio</strong>.
-Alexandre Iooss est ingénieur de recherche à l’ANSSI à Rennes.
+<p><strong>Bios</strong>.</p>
+<p>Alexandre Iooss est ingénieur de recherche à l’ANSSI à Rennes.
 Ses travaux portent sur le développement d’outils d’analyse de la sécurité matérielle. Il
 développe des simulateurs de canaux auxiliaires et d’injections de fautes. Il se passionne
 également pour le développement de logiciels libres.</p>
@@ -352,9 +344,9 @@ Paul Grandamme est doctorant au laboratoire Hubert Curien de l’Université Jea
           <a href="https://github.com/jaif-fr/2023-src/commits">
             Page last modified
             
-            by commit 1d6fc42,
+            by commit 9baa394,
             
-            Thu, 13 Jul 2023 15:37:47 +0200
+            Thu, 13 Jul 2023 15:53:58 +0200
           </a>
           
         </p>
