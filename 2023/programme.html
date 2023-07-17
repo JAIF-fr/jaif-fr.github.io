@@ -124,7 +124,7 @@
 </tr>
 <tr class="even">
 <td></td>
-<td><a href="#iooss">Alexandre Iooss</a></td>
+<td><a href="#iooss">Alexandre Iooss, Guillaume Bouffard</a></td>
 <td>Pew Pew, I’m root! De la caractérisation à l’exploitation: un voyage plein d’embûches</td>
 </tr>
 <tr class="odd">
@@ -230,35 +230,11 @@ Five placement algorithms are presented, relying on the vulnerability level and 
 <p><strong>Bio</strong>.
 Etienne Boespflug is currently a post-doctoral researcher at VERIMAG. He completed a master’s degree in computer science and security at the University of Limoges and defended his thesis prepared at VERIMAG entitled “Tools for code and countermeasures analysis against multiple faults attacks” on 28/04/23.</p>
 <h3 id="iooss">Pew Pew, I’m root! De la caractérisation à l’exploitation: un voyage plein d’embûches</h3>
-<p><strong>Alexandre Iooss</strong> (ANSSI - Laboratoire Sécurité des Composants),
-Guillaume Bouffard (ANSSI - Laboratoire Architecures Matérielles et Logicielles)</p>
+<p><strong>Alexandre Iooss</strong> (ANSSI – Laboratoire Sécurité des Composants),
+<strong>Guillaume Bouffard</strong> (ANSSI – Laboratoire Architectures Matérielles et Logicielles)</p>
 <p><strong>Résumé</strong>.
-Les attaques par faute constituent un vecteur d’attaque semi-invasif puissant et difficile
-à prévenir dans l’applicatif si l’environnement
-d’exécution matérielle n’embarque pas de mécanismes de protection. Néanmoins
-ces attaques sont difficiles à mettre en place et les réussir nécessite trois étapes :
-caractériser les effets de la faute sur un échantillon du composant exécutant
-une application de profilage, utiliser ce modèle de faute sur l’application sensible (en simulation
-par exemple) afin de déterminer les chemins d’attaques possibles et
-exploiter l’effet de la faute injectée sur le composant cible. Dans la littérature,
-ce travail reste principalement porté sur la sécurité des implémentations cryptographiques
-implémentées sur des micro-contrôleurs.</p>
-<p>Cependant, avec la démocratisation des appareils portables tels
-que les smartphones, la menace des attaques semi-invasives devient crédible pour
-des applications plus variées. Nous pensons que pour protéger efficacement ces
-systèmes, il est nécessaire d’avoir une méthodologie d’analyse de la réponse de ce
-type d’applications à des effets d’une faute sur le matériel jusqu’à sa manifestation
-sur les logiciels haut niveau.</p>
-<p>Dans cette présentation, nous aborderons une analyse complète allant de
-la caractérisation des effets d’une faute électromagnétique à l’exploitation sur
-une application complexe sensible. Pour ce faire, nous examinerons la sécurité
-de l’implémentation de l’application sudo intégrée dans la distribution GNU/Linux
-Raspberry Pi OS Lite pour Raspberry Pi 4.
-Nous montrons comment il est possible de transposer une caractérisation
-de la sensibilité à une application logicielle complexe, et comment, en l’absence de protections,
-il est possible de réaliser efficacement une attaque permettant l’escalation de privilèges.
-Notre méthode est suffisamment efficace pour
-forcer l’authentification via l’application sudo sans la modifier au préalable.</p>
+Les attaques par injections de fautes (FI) ne sont généralement pas considérées dans les modèles de sécurité des systèmes embarqués complexes. Cependant, elles constituent une menace pour la sécurité globale du système si un attaquant parvient à identifier et à reproduire une vulnérabilité par FI. La réussite de telles attaques implique cependant trois étapes : caractériser les effets d’une FI, modéliser les chemins d’attaque possibles par rapport aux effets des FI et exploiter l’impact des FI. Alors que les travaux antérieurs se sont principalement concentrés sur la sécurité des implémentations cryptographiques sur les microcontrôleurs, le développement d’appareils mobiles, tels que les smartphones, étend la menace d’attaques semi-invasives à un plus large éventail d’applications. Pour protéger efficacement ces systèmes, il est nécessaire de disposer d’une méthodologie permettant d’évaluer les conséquences au niveau du comportement du logiciel en cas de FI.</p>
+<p>Dans cette présentation, nous décrivons comment transposer un modèle de faute obtenu depuis le jeu d’instruction sur un logiciel complexe, avec des bibliothèques partagées. Dans ce travail, nous nous focalisons sur la sécurité de l’application sudo packagée dans la distribution GNU/Linux Raspberry Pi OS pour Raspberry Pi 4. Dans cette présentation, nous démontrons comment la caractérisation de sensibilité FI peut être utilisée pour trouver des faiblesses dans des logiciels complexes et, qu’en l’absence de protections, une attaque peut effectivement réussir. Nous montrons que nous pouvons forcer l’authentification sans modifier le binaire cible de sudo.</p>
 <p><strong>Bios</strong>.</p>
 <p>Alexandre Iooss est ingénieur de recherche à l’ANSSI à Rennes.
 Ses travaux portent sur le développement d’outils d’analyse de la sécurité matérielle. Il
@@ -324,11 +300,17 @@ Paul Grandamme est doctorant au laboratoire Hubert Curien de l’Université Jea
 </tr>
 <tr class="odd">
 <td></td>
-<td>Hongwei Zhao</td>
+<td><a href="#zhao">Hongwei Zhao</a></td>
 <td>Fault attack on the communication architecture of a RISC-V based system</td>
 </tr>
 </tbody>
 </table>
+<h3 id="zhao">Fault attack on the communication architecture of a RISC-V based system</h3>
+<p><strong>Hongwei Zhao</strong> (Lab-STICC)</p>
+<p><strong>Résumé</strong>.
+Fault attacks aim to disturb integrated circuits using methods such as power spikes, clock glitches or electromagnetic injection to break a security system or steal information. A SoC (System-on-Chip) is made up of numerous IPs which are connected to each other by a communication architecture. Our project focuses on the wishbone bus architecture of a RISC-V based system. A deep analysis of the wishbone bus architecture obtained using the LiteX framework has been carried out. Some vulnerabilities have been highlighted through fault injection simulations and possible attack vectors have been identified.</p>
+<p><strong>Bio</strong>.
+Hongwei ZHAO received the engineer degree in electronic system from Telecom Saint-Étienne in 2020. He is currently Ph.D. student at Université Bretagne Sud and member of the Lab-STICC laboratory. His research interests include fault injection attacks, RISC-V-based SoC security.</p>
       </div> <!-- /content -->
     </div> <!-- /main -->
 
@@ -344,9 +326,9 @@ Paul Grandamme est doctorant au laboratoire Hubert Curien de l’Université Jea
           <a href="https://github.com/jaif-fr/2023-src/commits">
             Page last modified
             
-            by commit 9baa394,
+            by commit 257e8ae,
             
-            Thu, 13 Jul 2023 15:53:58 +0200
+            Mon, 17 Jul 2023 17:05:10 +0200
           </a>
           
         </p>
