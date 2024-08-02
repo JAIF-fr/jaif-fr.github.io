@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JAIF 2024 - journée thématique sur les attaques par injection de fautes">
+    <title>
+      JAIF 2024 - Journée thématique sur les attaques par injection de fautes
+    </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <!--[if lte IE 8]>
+            <link rel="stylesheet" href="assets/css/marketing-old-ie.css">
+        <![endif]-->
+         <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="assets/css/side-menu.css">
+         <!--<![endif]-->
+
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="./assets/css/img-overlay.css">
+  </head>
+
+  <body>
+      <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link"><img style="height: 100%" src="media/logo-menu.png" alt="JAIF 2024" /></a></li>
+          <li class="pure-menu-item"><a href="./cfp.html" class="pure-menu-link">CfP</a></li>
+          <li class="pure-menu-item"><a href="./programme.html" class="pure-menu-link">Programme</a></li>
+          <li class="pure-menu-item"><a href="./inscription.html" class="pure-menu-link">Inscription</a></li>
+          <li class="pure-menu-item"><a href="./infos-pratiques.html" class="pure-menu-link">Informations pratiques</a></li>
+          <li class="pure-menu-item"><a href="../series.html" class="pure-menu-link">Éditions précédentes</a></li>
+        </ul>
+      </div>
+
+    <div id="main">
+      <div class="content">
+            <table>
+<tbody>
+<tr class="odd">
+<td>09h00</td>
+<td></td>
+<td>Ouverture de la salle &amp; accueil café</td>
+</tr>
+<tr class="even">
+<td>09h30</td>
+<td>Ronan Lashermes</td>
+<td>Ouverture de la journée &amp; mot d’accueil</td>
+</tr>
+<tr class="odd">
+<td>09h40</td>
+<td></td>
+<td><strong>Session 1 – laser</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#hugget">Nicolas Hugget</a> - présentation invitée</td>
+<td>L’injection de fautes comme outil d’investigation numérique</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#pichon">Laurent Pichon</a></td>
+<td>Theory of the transient current induced by laser illumination in FD-SOI CMOS inverter responsible of a bitflip</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#grandamme">Paul Grandamme</a></td>
+<td>Éteindre votre composant électronique ne le protège pas !</td>
+</tr>
+<tr class="odd">
+<td>10h45</td>
+<td></td>
+<td>Pause café - <a href="#posters">session posters</a></td>
+</tr>
+<tr class="even">
+<td>11h30</td>
+<td></td>
+<td><strong>Session 2 – approches formelles</strong></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#sellami">Yanis Sellami</a></td>
+<td>Fault Injection Vulnerability Characterization by Inference of Robust Reachability Constraints</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#tollec">Simon Tollec</a></td>
+<td>Fault-Resistant Partitioning of Secure CPUs for System Co-Verification against Faults</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#michelland">Sébastien Michelland</a></td>
+<td>From low-level fault modeling (of a pipeline attack) to a proven hardening scheme</td>
+</tr>
+<tr class="even">
+<td>12h30</td>
+<td></td>
+<td>Déjeuner</td>
+</tr>
+<tr class="odd">
+<td>14h00</td>
+<td></td>
+<td><strong>Session 3 – cryptographie</strong></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#maginot">Serge Maginot</a> - présentation invitée</td>
+<td>Scalable security for connected devices</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#nguyen">Viet-Sang Nguyen</a></td>
+<td>Attacks and Countermeasures in Persistent Fault Model</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#pqshield">Adrian Thillard, Thomas Prest</a></td>
+<td>Attaques par Fautes sur SLH-DSA</td>
+</tr>
+<tr class="odd">
+<td>15h10</td>
+<td></td>
+<td>Pause café - <a href="#posters">session posters</a></td>
+</tr>
+<tr class="even">
+<td>15h50</td>
+<td></td>
+<td><strong>Session 4 – SoC / IA</strong></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#vuillod">Bastien Vuillod</a></td>
+<td>Attaques backdoor sur réseaux de neurones: quelle place pour l’injection de fautes ?</td>
+</tr>
+<tr class="even">
+<td></td>
+<td><a href="#legonidec">Owen Le Gonidec</a></td>
+<td>Évolutions dans la sécurité des modules de gestion de l’énergie</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><a href="#fanjas">Clément Fanjas</a></td>
+<td>Injection de faute electromagnétique sur sytem-on-chip en boîte noire</td>
+</tr>
+<tr class="even">
+<td>16h45</td>
+<td>Comité d’organisation</td>
+<td>Mot de clôture de la journée</td>
+</tr>
+<tr class="odd">
+<td>17h00</td>
+<td></td>
+<td>Fin de la journée</td>
+</tr>
+<tr class="even">
+<td>17h30–19h00</td>
+<td></td>
+<td>social event</td>
+</tr>
+</tbody>
+</table>
+<h2 id="présentations-invitées">Présentations invitées</h2>
+<h3 id="hugget">L’injection de fautes comme outil d’investigation numérique</h3>
+<p><strong>Nicolas Hugget</strong> (CCMI)</p>
+<p><strong>Résumé</strong>.
+Dans le cadre d’investigations judiciaires les services d’enquêtes sont de plus en plus régulièrement confrontés à des supports numériques, afin de satisfaire aux besoins de l’enquête des unités spécialisées en sont en charge d’extraire les données contenues dans ces supports. Les technologies évoluant, cette tâche est devenue plus ardu et impose aux spécialistes de tester de nouveaux moyen d’accès à la données. Longtemps cantonnées au domaine de la sécurité informatique, les injections de fautes sont désormais envisagées comme un nouvel outils par les analystes numérique. Au cours de cette présentation nous monterons comment les attaques en fautes peuvent être utilisées pour accélérer le processus d’extraction de données dans le cadre d’une enquêtes criminelles judiciaire, en mettant en lumière leurs avantages, leurs limites et leur impact sur les données à extraire.</p>
+<p><strong>Bio</strong>.
+Doctorant au sein de l’équipe de sécurité de l’ENS, Nicolas Hugget est ingénieur diplômé de l’Institut Supérieur Électronique de Paris. Il s’est formé à la sécurité matérielle au cours d’un mastère spécialisé aux Mines de Saint-Étienne. Militaire de la gendarmerie, il sert depuis 4 ans dans la dominante criminalistique numérique où il s’est spécialisé en extraction de données.</p>
+<h3 id="maginot">Scalable security for connected devices</h3>
+<p><strong>Serge Maginot</strong> (Tiempo)</p>
+<p><strong>Résumé</strong>.
+We will explore the different security levels, corresponding certification standards and assurance levels, that are required or likely to be required for connected hardware devices according to the targeted usages, and the difficulties to overcome for their implementation.</p>
+<p><strong>Bio</strong>.
+Serge Maginot has worked for more than 30 years in the semiconductor industry. He graduated from Ecole Polytechnique Paris and Telecom Paris engineering schools and began his career in 1987 as a designer of video processing chips. In 1991, he co-founded a startup named LEDA, which developed Electronic Design Automation (EDA) tools. Serge joined Synopsys Inc. in 2000 in the role of Director of R&amp;D for static verification products. In 2007, he co-founded Tiempo Secure, startup specialized in the design of IP solutions and key secure elements for strategic embedded security systems (IoT, Mobile, Automotive…). Serge is currently the CEO of Tiempo Secure. He is also a board member of the Minalogic digital transformation competitiveness cluster.</p>
+<h2 id="présentations">Présentations</h2>
+<h3 id="pichon">Theory of the transient current induced by laser illumination in FD-SOI CMOS inverter responsible of a bitflip</h3>
+<p><strong>L. Pichon</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>L. Le Brizoual</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>E. Ferrucho Alavarez</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>L. Claudepierre</strong>
+(Univ. Rennes, CNRS, IETR),</p>
+<p><strong>Résumé</strong>.
+A theoretical model of the induced transient photocurrent in MOS transistor under laser
+illumination is proposed to predict an estimation of the incident power surface density of the
+laser required to create a bitflip in CMOS FD-SOI electronic circuitry. This model is based on
+the physical effect of the laser interaction with the semiconductor material (silicon) including
+the laser characteristics, the physical properties of the silicon, and the geometrical and
+technological parameters. The model takes into account the amplification of the photocurrent
+induced by the parasitic bipolar transistor combined with the effects of size reduction (length
+of the transistor channel). It highlights the volume effects, with a higher photocurrent level
+due to a higher electron/hole pair generation rate for a thicker active layer, making the devices
+more sensitive to fault injection by pulsed IR laser, particularly for conventional CMOS
+technologies and FD-SOI technologies based on FINFETs.</p>
+<p>This theoretical model is a good predictive tool in complements with TCAD simulations for
+studies of vulnerability analysis in advanced FD-SOI silicon technologies and enables
+parametric analysis of physical phenomena related to the technology, in order to anticipate
+experimental studies of the vulnerability by laser fault injection of complex electronic systems.</p>
+<p><strong>Bio</strong>.
+Laurent Pichon received his PhD degree in physics from the university of Rennes (France) in
+1993, and his Research Manager degree (Habilitation à Diriger des Recherches - HDR) in
+electronics from the university of Caen (France) in 2001. Since 2005 he is professor at the
+department Organic and SIlicon Systems (OASIS) of the Institut d’Electronique et des
+Technologies du Numérique (IETR), university of Rennes. His research activities focuses on
+process fabrication and electrical characterization of microelectronic components and
+microsensors in silicon CMOS technology. He currently manages the supervision of the
+implementation of the Cybersecurity platform “CYBER ELEC” of IETR for research activities
+based on the study of the vulnerability of semiconductors components by laser injection faults.
+Laurent Pichon is author and co-author of more 100 international papers published in reviews
+or conference proceedings, 90 participations in international conferences, 49 participations in
+national conferences (including 13 pedagogical meetings), 1 book chapter and 1 book
+(pedagogical).</p>
+<h3 id="grandamme">Éteindre votre composant électronique ne le protège pas !</h3>
+<p><strong>Paul Grandamme</strong>
+(Laboratoire Hubert Curien, Univ. Jean Monnet Saint-Etienne, CNRS,
+Mines Saint-Etienne, CEA Leti, Centre CMP, Gardanne),
+<strong>Lilian Bossuet</strong>
+(Laboratoire Hubert Curien, Univ. Jean Monnet Saint-Etienne, CNRS),
+<strong>Jean-Max Dutertre</strong>
+(Mines Saint-Etienne, CEA Leti, Centre CMP, Gardanne)</p>
+<p><strong>Résumé</strong>.
+Les attaques physiques, et notamment les attaques par injection de fautes,
+constituent une menace importante pour la sécurité des systèmes embarqués.
+Parmi les moyens d’injection de fautes, le laser présente l’avantage significatif d’être extrêmement précis spatialement et temporellement. De nombreuses
+études ont examiné l’utilisation des lasers pour injecter des fautes dans une
+cible en cours de fonctionnement. Cependant, la haute précision de l’injection
+de fautes par laser s’accompagne d’exigences concernant la connaissance de
+l’implémentation et du temps d’exécution du code victime. Dans ces travaux,
+nous démontrons expérimentalement qu’il est également possible d’effectuer une
+injection de fautes par laser sur un composant non alimenté. Plus précisément,
+nous avons ciblé la mémoire non volatile Flash d’un microcontrôleur 32 bits.
+L’avantage de cette nouvelle méthode d’attaque est qu’elle ne nécessite aucune
+synchronisation entre la victime et l’attaquant. Ainsi il est désormais possible
+d’attaquer un algorithme cryptographique sans avoir d’accès physique au circuit pendant son exécution. Nous fournissons une caractérisation expérimentale
+de ce phénomène avec une description du modèle de faute du niveau physique
+jusqu’au niveau logiciel. Enfin, nous avons appliqué ces résultats pour effectuer
+une analyse de fautes persistantes (PFA) sur un AES 128 bits avec un modèle
+d’attaquant particulièrement réaliste qui renforce l’intérêt de la PFA.</p>
+<p><strong>Bio</strong>.
+Paul Grandamme est doctorant dans l’équipe SESAM (Systèmes Embarqués Sécurisés et Architectures Matérielles) du laboratoire Hubert Curien de l’Univ. Jean Monnet à Saint-Étienne et dans l’équipe SAS (Systèmes et Architectures Sécurisés) de l’École des Mines de Saint-Étienne (MSE). Après avoir obtenu un diplôme d’ingénieur spécialisé dans l’informatique et la microélectronique de MSE, il a réalisé son stage de fin d’études au sein de l’équipe SAS sur l’analyse par canaux auxiliaires des communications par fibre optique. Il réalise actuellement sa thèse sur l’étude des attaques par injection de fautes sur des circuits électroniques non-alimentés, dans le cadre du projet POP financé par l’ANR.</p>
+<h3 id="sellami">Fault Injection Vulnerability Characterization by Inference of Robust Reachability Constraints</h3>
+<p><strong>Yanis Sellami</strong>
+(Univ. Grenoble Alpes, CEA List,
+Univ. Paris-Saclay, CEA List),
+<strong>Guillaume Girol</strong>
+(Univ. Paris-Saclay, CEA List),
+<strong>Frédéric Recoules</strong>
+(Univ. Paris-Saclay, CEA List),
+<strong>Damien Couroussé</strong>
+(Univ. Grenoble Alpes, CEA List),
+<strong>Sébastien Bardin</strong>
+(Univ. Paris-Saclay, CEA List)</p>
+<p><strong>Résumé</strong>.
+While automated code analysis techniques have succeeded in finding and reporting potential vulnerabilities in binary programs, they tend to report many false positives, which cannot be reliably exploited. This is typical in evaluations of fault injection attacks vulnerabilities as faults can create unexpected program behaviors dependent on complex initial states. As the precise setup of the initial states is hard to achieve, such faults lead code analysis techniques to report vulnerabilities that exist in theory but are infeasible in practice. Vulnerability characterization techniques are thus needed to distinguish such reports from those that come from serious vulnerabilities.</p>
+<p>Recently, Girol et al. have introduced the concept of robust reachability, a property of program inputs applied to code analysis frameworks to report only vulnerabilities that can be reproduced reliably. This is done by distinguishing inputs that are under the control of the attacker from those that are not, and by reporting only vulnerabilities that do not depend on the value of the uncontrolled inputs. Yet, this remains insufficient for distinguishing severe vulnerabilities from benign ones as robust reachability will be unable to report cases that, e.g., are easy to trigger but may not succeed in a few corner cases.</p>
+<p>To address this issue, we propose a method that leverages an abduction procedure to generate a robust reachability constraint, that is, a logical constraint on the uncontrolled inputs under which we have the guarantee that the vulnerability will be triggered. We demonstrate the vulnerability characterization capabilities of an implementation of this procedure on a fault injection attack case-study taken from FISSC. We show that our method refines robust reachability and leads to a much better characterization of the reported vulnerabilities. The methods additionally leads to the generation of high-level feedback that is easier to understand and reuse for further analysis.</p>
+<p><strong>Bio</strong>.
+Yanis Sellami is a permanent researcher at CEA/LIST LSL, Paris-Saclay Univ. since December, 2023, where he works on the BINSEC symbolic execution engine on analyses for fault injection and side channel attacks as well and on the use of abduction techniques for symbolic execution.
+He was previously at CEA/LIST LFIM in Grenoble where he worked on the application of formal methods for the automatic characterization of fault injection attacks vulnerabilities.
+Before that, he was PhD in the Laboratory of Informatics of Grenoble under the supervision of N. Peltier and M. Echenim, where he worked on the design and implementation of automated theory-agnostic abduction algorithm and their applications.
+His topics of interest include formal verification of programs, symbolic execution, fault injection and side-channel attacks, logics and automated reasoning.</p>
+<h3 id="tollec">Fault-Resistant Partitioning of Secure CPUs for System Co-Verification against Faults</h3>
+<p><strong>Simon Tollec</strong>
+(Univ. Paris-Saclay, CEA List),
+<strong>Vedad Hadžić</strong>
+(Graz Univ. of Technology),
+<strong>Pascal Nasahl</strong>
+(Graz Univ. of Technology, lowRISC),
+<strong>Mihail Asavoae</strong>
+(Univ. Paris-Saclay, CEA List),
+<strong>Roderick Bloem</strong>
+(Graz Univ. of Technology),
+<strong>Damien Couroussé</strong>
+(Univ. Grenoble Alpes, CEA List),
+<strong>Karine Heydemann</strong>
+(Thales DIS, Sobonne Univ.),
+<strong>Mathieu Jan</strong>
+(Univ. Paris-Saclay, CEA List),
+<strong>Stefan Mangard</strong>
+(Graz Univ. of Technology)</p>
+<p><strong>Résumé</strong>.
+Fault injection attacks are a serious threat to system security, enabling attackers to bypass protection mechanisms or access sensitive information.
+To evaluate the robustness of CPU-based systems against these attacks, it is essential to analyze the consequences of the fault propagation resulting from the complex interplay between the software and the processor.
+However, current formal methodologies combining hardware and software face scalability issues due to the monolithic approach used.
+To address this challenge, our contribution formalizes the “k-fault-resistant partitioning” notion to solve the fault propagation problem when assessing redundancy-based hardware countermeasures in a first step.
+Proven security guarantees can then reduce the remaining hardware attack surface when introducing the software in a second step.</p>
+<p>During this presentation, we will first validate our approach against previous work by reproducing known results on cryptographic circuits.
+In particular, we outperform state-of-the-art tools for evaluating AES under a three-fault-injection attack.
+Then, we apply our methodology to the OpenTitan secure element and formally prove the security of its CPU’s hardware countermeasure to single bit-flip injections.
+Besides that, we demonstrate that previously intractable problems, such as analyzing the robustness of OpenTitan running a secure boot process, can now be solved by a co-verification methodology that leverages k-fault-resistant partitioning.
+We also report a potential exploitation of the register file vulnerability in two other software use cases.
+Finally, we provide a security fix for the register file, prove its robustness, and integrate it into the OpenTitan project.</p>
+<p><strong>Bio</strong>.
+Simon Tollec obtained his Master of Science in the engineering of Telecom Paris in 2021 in the fields of embedded systems, data science, and network security. He is currently completing his Ph.D. in the French Atomic Energy Commission (CEA) on the formal verification of processor microarchitecture to analyze system security against fault attacks.</p>
+<h3 id="michelland">From low-level fault modeling (of a pipeline attack) to a proven hardening scheme</h3>
+<p><strong>Sébastien Michelland</strong> (LCIS, Grenoble Univ. Alpes)</p>
+<p><strong>Résumé</strong>.
+Despite their intrinsically physical nature, fault attacks are frequently protected against with software countermeasures, mainly due to the software stack’s flexibility and ease of deployment. But formulating these attacks at a program’s abstraction level with a fault model leads to inherent approximations that weaken practical security guarantees. Recent work has shown that approximations made by fault models at the ISA level can be abused to bypass countermeasures. Meanwhile, finer (typically micro-architectural) models include complicated hardware details that programming languages do not capture.</p>
+<p>In this talk, I’ll explore a countermeasure to an instruction-skip-like faut model at the micro-architectural level. The unpredictability of the fault’s effect on software invites a co-designed hardware/software countermeasure that we can
+nonetheless model semantically using standard language analysis techniques. This formal approach results in proving a security theorem. Implementing the countermeasure in a production compiler (LLVM) brings up difficulties symbolic of any security-related addition in a purely functional compiler.</p>
+<p><strong>Bio</strong>.
+Sébastien researches themes around the development and analysis of programs, from compilation and security to semantics and formal verification. He has an MSc in Theoretical Computer Science from the École Normale Supérieure de Lyon, and is currently a 2nd-year Ph.D. student at the LCIS lab. He’s working on integrating security countermeasures with the compilation process, unless he’s being distracted by funny-looking optimization techniques, in which case he’s not
+working.</p>
+<h3 id="nguyen">Attacks and Countermeasures in Persistent Fault Model</h3>
+<p><strong>Viet Sang Nguyen</strong>
+(Laboratoire Hubert Curien, Univ. Jean Monnet Saint-Etienne, CNRS),
+<strong>Vincent Grosso</strong>
+(Laboratoire Hubert Curien, Univ. Jean Monnet Saint-Etienne, CNRS),
+<strong>Pierre-Louis Cayrel</strong>
+(Laboratoire Hubert Curien, Univ. Jean Monnet Saint-Etienne, CNRS)</p>
+<p><strong>Résumé</strong>.
+Persistent fault attacks have recently become a significant area of research in
+embedded cryptography. In a persistent fault model, the fault injection targets
+constants stored in non-volatile memory. A fault of this type persists across
+multiple encryptions and only disappears when the device is reset. Previous
+works in the literature assume that a table of
+S-box elements is stored in the memory and consider the model where the fault
+injection results in a biased faulty S-box, meaning that one or several elements
+appear twice or more times while one or several others disappear. This leads
+to non-uniform distributions of ciphertext words that can be exploited by some
+efficient statistic methods. Few countermeasures are proposed to detect such
+biases in the faulty S-box. However, the current fault model does
+not account for other severe consequences of persistent faults. Our work aims to
+address this gap.</p>
+<p>In this work, we extend the previous model in two ways. First, we consider
+persistent faults causing a swap of two or three S-box elements (non-biased faulty
+S-box). We demonstrate, using the PRESENT cipher, that an attacker can bypass existing countermeasures and recover the key by applying a linear attack.
+Second, we show that S-box is not the only target for fault injection, as assumed by most of previous works. We consider a persistent fault induced on a
+round constant of the AES cipher and demonstrate that the key can be efficiently recovered by applying a differential fault attack. Notably, we reduce the
+typical statistical analysis of previous works, which requires from few hundreds
+to few thousands ciphertexts, to a differential analysis needing only 2 plaintext-ciphertext pairs. Finally, we propose a new and more efficient countermeasure
+which can detect persistent faults that the existing countermeasures cannot.</p>
+<h3 id="pqshield">Attaques par Fautes sur SLH-DSA</h3>
+<p><strong>Adrian Thillard</strong>
+(PQShield),
+<strong>Thomas Prest</strong>
+(PQShield)</p>
+<p><strong>Résumé</strong>.
+Nous présenterons les attaques par faute sur la signature SLH-DSA, en cours de
+standardisation par le NIST. Nous discuterons de l’efficacité des contre-mesures
+génériques, et présenterons une nouvelle contre-mesure spécifique à SLH-DSA.</p>
+<p><strong>Bio</strong>.
+Adrian et Thomas ont tous deux a effectué des thèses à l’ENS, sur les contre-mesures aux attaques par canaux cachés pour Adrian, et sur la cryptographie à base de réseaux Euclidiens pour Thomas. Adrian a ensuite été analyste side-channel à l’ANSSI, Ledger et, depuis 2024, à PQShield. Thomas a été ingénieur à Thales, puis chercheur en cryptographie à PQShield depuis 2018.</p>
+<h3 id="vuillod">Attaques backdoor sur réseaux de neurones: quelle place pour l’injection de fautes ?</h3>
+<p><strong>Bastien Vuillod</strong>
+(CEA Leti, Univ. Grenoble Alpes),
+<strong>Pierre-Alain Moellic</strong>
+(CEA Leti, Univ. Grenoble Alpes),
+<strong>Jean-Max Dutertre</strong>
+(Département Systèmes et Architectures Sécurisés, École des Mines de Saint-Étienne)</p>
+<p><strong>Résumé</strong>.
+Le déploiement à large échelle des modèles de machine learning, principalement
+des réseaux de neurones profonds, est accéléré par le développement des plateformes matérielles de plus en plus performantes et adaptées à l’IA embarquée,
+autant pour l’inférence que pour l’apprentissage. Aujourd’hui, la sécurité de
+ce dernier, et notamment de l’apprentissage embarqué, est une question majeure plus particulièrement pour l’apprentissage décentralisé comme le Federated
+Learning.</p>
+<p>Parmi les grandes menaces à l’apprentissage, les attaques par empoisonnement (poisoning attacks) sont les plus étudiées car elles offrent un vaste
+panorama de vecteurs d’attaques. En particulier, les attaques backdoor cherchent
+à introduire, lors de l’entraı̂nement, un comportement malveillant ciblé, difficilement détectable, et qui peut être activé à l’inférence. L’état de l’art sur
+les attaques backdoor est quasi-exclusivement dédié à l’empoisonnement des
+données d’apprentissage.</p>
+<p>Dans cette présentation, nous discutons de récents vecteurs d’attaque qui introduisent des backdoors en altérant directement les valeurs des paramètres par
+de l’injection de fautes. En se reposant sur deux références récentes présentées à
+ICCV 2023 et S&amp;P 2024, nous analyserons les modèles de menaces associées,
+la robustesse de leur évaluation et leur application dans des systèmes de federated learning.</p>
+<h3 id="fanjas">Injection de faute electromagnétique sur sytem-on-chip en boîte noire</h3>
+<p><strong>Clément Fanjas</strong>
+(CEA Leti, Univ. Grenoble Alpes)</p>
+<p><strong>Résumé</strong>.
+Traditionnellement utilisées pour tester la sécurité des microcontrôleurs, les attaques par injection de faute ont récemment fait leurs preuves sur des cibles plus complexes telles que des System-on-Chip (SoC) de smartphone. Il s’agit d’un puissant outil de caractérisation sécuritaire qui peut être utilisé pour affecter le control-flow d’une cible afin de contourner des fonctions de sécurité. Mais dans le cas de dispositifs mobiles comme des smartphones, ce type d’attaque doit être mené en boîte noire. Dans ce contexte, rechercher les paramètres permettant d’injecter et d’exploiter une faute avec succès peut s’avérer complexe puisque l’attaquant n’a pas la possibilité d’exécuter du code sur sa cible. Cela est d’autant plus vrai pour des méthodes comme l’injection de faute Electromagnétique (EMFI) pour lesquelles les dimensions à explorer sont nombreuses (X,Y,Z,amplitude,largeur d’impulsion, instant de la perturbation). Le but de cette présentation est de mettre en avant une méthodologie pour résoudre le verrou que représente la recherche des paramètres d’injection de faute en boîte noire. Cette méthodologie s’appuie sur l’utilisation d’un code non-modifiable par l’attaquant pour tester le comportement de la cible face à une injection de faute durant l’exécution d’une boucle. Une preuve de concept est présentée, la cible est un smartphone Android, le code non-modifiable utilisé est ‘fastboot’ : un utilitaire d’urgence qui sert à reflasher la mémoire du smartphone. Les bons paramètres pour une EMFI sont identifiés grâce à notre méthodologie, puis une fonction de sécurité est contournée en utilisant ces paramètres.</p>
+<p><strong>Bio</strong>.
+Clément est diplômé de l’IUT de Génie Electrique et Informatique Industrielle de Grenoble (2018) ainsi que de l’école d’ingénieur ESISAR à Valence (2021). Depuis novembre 2021 Clément mène une thèse de doctorat au sein de l’équipe SAS de Gardanne côté CEA. Sa thèse est dirigée par Jessy Clédière et est encadrée par Driss Aboulkassimi et Simon Pontié. Le sujet de cette thèse porte sur l’exploitation des vulnérabilités matérielles des dispositifs mobiles comme nouvelle approche pour l’analyse forensique.</p>
+<h3 id="legonidec">Évolutions dans la sécurité des modules de gestion de l’énergie</h3>
+<p><strong>Owen Le Gonidec</strong>
+(IETR),
+<strong>Maria Méndez Real</strong>
+(IETR),
+<strong>Guillaume Bouffard</strong>
+(ANSSI),
+<strong>Jean-Christophe Prévotet</strong>
+(IETR)</p>
+<p><strong>Résumé</strong>.
+De plus en plus d’opérations sensibles sont réalisées sur des systèmes-sur-puce (SoC) qui présentent une large surface d’attaque. Depuis une quinzaine d’années, des attaques matérielles contre ce type de système sont publiées. Elles transposent des techniques d’attaques développées pour des composants sécurisés, où l’état de l’art est bien établi. Toutefois, ces attaques nécessitent un accès physique au système cible.</p>
+<p>En 2017, Tang et al. ont démontré avec l’attaque ClkScrew que les modules matériels de gestion de l’énergie, accessibles depuis le logiciel, constituent un nouveau vecteur d’attaque. Ils ont réussi à provoquer une injection de fautes en exploitant malicieusement les régulateurs de tension d’alimentation, leur donnant accès aux ressources autrement inaccessibles de l’environnement d’exécution de confiance (TEE). Ce type d’attaque basé sur l’énergie a été étendu et perfectionné dans des publications ultérieures. Contrairement aux attaques matérielles traditionnelles, ce nouveau type d’attaque ne nécessite pas d’accès physique à la cible.</p>
+<p>Des contre-mesures à ces attaques ont été mises en œuvre dans les principaux TEEs, tels qu’Intel SGX et ARM TrustZone. Cependant, ces contre-mesures restreignent le contrôle de la tension d’alimentation, empêchant ainsi l’utilisation des mécanismes de gestion de l’énergie à leur plein potentiel. De nouvelles contre-mesures sont proposées dans la littérature, mais elles réduisent les performances du système ou manquent d’implémentations concrètes. De plus, ces dernières années, de nombreux concepts innovants de TEEs matériels pour RISC-V ont été proposés. Cependant, ces TEEs ne prennent à ce jour pas en compte ce type d’attaques, malgré leur inclusion dans le modèle d’attaquant défini par le profil de protection de Global Platform.</p>
+<p>Dans cette présentation, nous aborderons la problématique des attaques matérielles par injection de fautes qui exploitent les modules de gestion de l’énergie depuis le logiciel. Nous décrirons l’importance de ces attaques, les contre-mesures existantes et les nouvelles solutions potentielles, avec un focus sur les nouvelles implémentations de TEEs sur processeurs utilisant RISC-V.</p>
+<p><strong>Bio</strong>.
+Owen Le Gonidec est un doctorant travaillant sur les attaques basées sur l’exploitation des mécanismes de gestion de l’énergie. Cette thèse est financée par le projet ANR CoPhyTEE (Sécurisation des systèmes sur puce à base d’architecture open source contre des attaques physiques réalisées à distances) et est encadrée par Maria Mendéz Real (IETR), Jean-Christophe Prévotet (IETR) et Guillaume Bouffard (ANSSI).</p>
+<h2 id="posters">Posters</h2>
+<h3 id="henault">LiteInjector : A fault emulator framework for LiteX System on Chip</h3>
+<p><strong>Adam Henault</strong>
+(Univ. Bretagne Sud, Lab-STICC),
+<strong>Philippe Tanguy</strong>
+(Univ. Bretagne Sud, Lab-STICC),
+<strong>Vianney Lapôtre</strong>
+(Univ. Bretagne Sud, Lab-STICC)</p>
+<p><strong>Résumé</strong>.
+Les attaques par injection de fautes (FIA) représentent une
+menace significative pour la sécurité des systèmes embarqués.
+Il existe trois méthodes possibles pour évaluer la sécurité
+de composants face aux attaques en faute. La première est
+l’attaque directe de la cible, cela demande du temps et de
+l’expertise. La deuxième est l’injection de faute lors de la
+simulation du design cible, cela permet d’évaluer la sécurité
+face à des fautes logiques. Cependant, cette méthode peut
+donner lieu à des campagnes d’attaques assez longues, surtout
+lorsque l’on souhaite simuler le fonctionnement de systèmes
+sur puce (SoC) de taille importante. Enfin, la dernière
+méthode est l’émulation de faute. Réalisée sur carte FPGA,
+elle permet d’accélérer les campagnes d’évaluation en tirant
+parti de l’accélération matérielle. Dans nos travaux, nous
+nous sommes intéressés à cette dernière méthode et avons
+développé une solution que nous avons nommée LiteInjector.</p>
+<p>LiteInjector est un framework d’émulation de fautes
+logiques. Le framework est modulaire, open-source et destiné
+aux systèmes sur puce développés avec l’outil LiteX lequel
+repose sur le framework Migen.
+LiteInjector
+est paramétrable et permet l’injection de fautes dans des
+design matériels décris avec Migen. LiteInjector utilise un
+système de masque, ce qui permet de supporter le multifautes
+ainsi qu’un système de trigger permettant la création de
+conditions complexes permettant de déclencher les injections
+de fautes selon les besoins de l’évaluateur.</p>
+<p><strong>Bio</strong>.
+Adam Henault est étudiant en Master 2 en sécurité des
+systèmes embarqués à l’Univ. Bretagne Sud à Lorient et
+stagiaire dans le Laboratoire Lab-STICC de Lorient au sein
+de l’équipe ARCAD, encadré par Philippe Tanguy et Vianney
+Lapôtre. Il entamera une thèse de doctorat en octobre 2024 au
+sein de cette même équipe de recherche.</p>
+<h3 id="qheneherve">Impact of fault injections on the PMP configuration flow within a CVA6 core</h3>
+<p><strong>Kévin Quénéhervé</strong>
+(Univ. Bretagne Sud, Lab-STICC),
+<strong>Philippe Tanguy</strong>
+(Univ. Bretagne Sud, Lab-STICC),
+<strong>Rachid Dafali</strong>
+(DGA MI),
+<strong>Vianney Lapôtre</strong>
+(Univ. Bretagne Sud, Lab-STICC)</p>
+<p><strong>Résumé</strong>.
+Les attaques par injection de fautes (FIA) représentent une
+menace significative pour la sécurité et la fiabilité des systèmes
+embarqués, notamment ceux reposant sur des processeurs
+intégrés. Notre étude porte sur l’analyse de l’impact des
+FIA sur le flux de configuration du mécanisme de protection
+mémoire appelé Physical Memory Protection (PMP) au sein
+du cœur RISC-V CVA6 de l’OpenHW Group. Des campagnes
+d’injection de fautes ciblant une implémentation FPGA (carte
+ARTY A7-100T) ont été réalisées pour caractériser les effets
+des fautes. Pour ce faire, nous nous sommes appuyés sur des
+injections via la perturbation de l’horloge.</p>
+<p>Les expériences menées ont permis de dénombrer et classifier les effets des injections sur la configuration des registres
+du PMP.
+Les résultats démontrent que les injections réalisées
+mènent à une vingtaines de combinaisons d’effets sur les
+registres de configuration du PMP.</p>
+<p><strong>Bio</strong>.
+Kévin Quénéhervé est doctorant en fin de première année
+au sein de l’Univ. Bretagne Sud à Lorient, dans le
+Laboratoire Lab-STICC équipe ARCAD. Ses travaux de thèse
+se focalisent sur l’étude et développement d’un processeur
+embarqué RISC-V tolérant aux fautes induites par des attaques
+physiques. Il est dirigé par Vianney Lapôtre et encadré par
+Philippe Tanguy et Rachid Dafali.</p>
+<h3 id="modeling-thermal-effects-for-biasing-pufs">Modeling Thermal Effects For Biasing PUFs</h3>
+<p><strong>Aghiles Douadi</strong>
+(TIMA / LCIS, UGA),
+<strong>Elena-Ioana Vatajelu</strong>
+(TIMA / LCIS, UGA),
+<strong>Paolo Maistri</strong>
+(TIMA, UGA),
+<strong>David Hely</strong>
+(LCIS, UGA),
+<strong>Vincent Beroulle</strong>
+(LCIS, UGA),
+<strong>Giorgio Di Natale</strong>
+(TIMA UGA)</p>
+<p><strong>Résumé</strong>.
+Les primitives de sécurité, telles que les fonctions physiques non clonables (PUFs) ou les générateurs de nombres aléatoires véritables (TRNGs), sont devenues des racines matérielles de confiance pour assurer la sécurité des applications modernes. Cependant, ces primitives montrent une vulnérabilité face aux attaques physiques, notamment en présence de variations de température. Des recherches antérieures ont démontré la faisabilité d’attaques exploitant les fluctuations thermiques pour compromettre la sécurité de ces primitives. En particulier, lorsqu’elles sont implémentées sur des FPGA, ces composants programmables peuvent être sensibles aux altérations induites par les changements thermiques. Ces résultats soulignent la nécessité de mieux comprendre les implications de la sensibilité à la température sur la sécurité et la robustesse de ces mécanismes de sécurité. Cette étude examine comment la chaleur affecte, de manière instantanée et permanente, le fonctionnement des oscillateurs en anneau, qui constituent les éléments de base des PUFs basés sur les oscillateurs en anneau. L’étude propose également des moyens d’exploiter ces effets pour biaiser les réponses des PUFs, permettant ainsi leur clonage potentiel.</p>
+<p><strong>Bio</strong>.
+Aghiles Douadi, doctorant en deuxième année à TIMA à Grenoble et au LCIS à Valence, je mène des recherches sur les attaques laser sur des primitives de sécurité de type PUF dans le cadre du projet ANR POP. J’ai obtenu mon diplôme en traitement du signal et de l’image à l’Univ. de Bourgogne à Dijon en 2022.</p>
+<h3 id="fpga-fault-injection-platform-une-plateforme-moderne-et-rapide-dinjection-de-fautes-sur-fpga-par-reconfiguration-partielle">FPGA Fault Injection Platform: une plateforme moderne et rapide d’injection de fautes sur FPGA par reconfiguration partielle</h3>
+<p><strong>Daniel Thirion</strong>
+(STMicroelectronics, LCIS UGA),
+<strong>Nathan Hocquette</strong>
+(STMicroelectronics),
+<strong>Jean-Marc Daveau</strong>
+(STMicroelectronics),
+<strong>Philipe Roche</strong>
+(STMicroelectronics)</p>
+<p><strong>Résumé</strong>.
+Les méthodes d’injection traditionnelles de SEU (Single Event Upset) dans le contexte de Sûreté fonctionnelle sont réalisées en simulation, a l’aide d’outils comme Z01X, XceliumSafety…
+Ces outils, en plus d’être coûteux en resources matérielles (coeurs de calculs), en resources logicielles (licences EDA), sont très lents, et d’autant plus avec le besoin grandissant de tester des SoC (System on Chip) complets.
+Notre nouvelle plateforme, développée sur AMD ZYNQ-7000, propose de nouvelles méthodes pour réduire l’overhead de la reconfiguration partielle, permettre une parallélisation illimitée, simplifier le développement, et surtout permettre un suivi des signaux internes au système sous test.
+Cette plateforme a obtenu une quasi équivalence avec les traces obtenues en simulation durant nos tests sur un SoC complet, tout en obtenant une accélération de l’ordre de 96,25% (en comparant une carte ZC706 par rapport à une licence de XcelliumSafety).
+Les travaux futurs auront pour but d’optimiser davantage les campagnes par l’utilisation de “snapshots”, et d’améliorer le support pour des injections multiples (contexte sécurité embarqué).</p>
+<p><strong>Bio</strong>.
+Daniel THIRION est un doctorant au laboratoire UGA/Grenoble-INP LCIS, Valence, poursuivant en CIFRE à STMicroelectronics Crolles.
+Initialement designer matériel, intégrateur SoC, il a été tourné vers la sûreté fonctionnelle dans son équipe à ST, puis vers la sécurité matériel par ses études doctorales avec le LCIS.</p>
+<h3 id="control-of-ring-oscillators-emfi-susceptibilty-through-fpga-pr-constraints">Control of Ring Oscillators EMFI Susceptibilty through FPGA P&amp;R Constraints</h3>
+<p><strong>Sami El Amraoui</strong>
+(TIMA UGA),
+<strong>Régis Leveugle</strong>
+(TIMA UGA),
+<strong>Paolo Maistri</strong>
+(TIMA UGA)</p>
+<p><strong>Résumé</strong>.
+Ring Oscillators (ROs) are widely used in various electronic systems, contributing to their functionality, security, and reliability. Therefore, the characterization of the robustness of RO-based designs against fault attacks such as ElectroMagnetic Fault Injection (EMFI) is a real concern. In this paper, we study the impact of electromagnetic (EM) pulses on ROs implemented in FPGAs. We show that the induced harmonic response depends on the placement and routing of the inverters for different parameters of the pulse. Such a characterization can help developing RO-based structures optimized either for better robustness against attacks or on the opposite for higher sensitivity in order to implement on-chip detectors.</p>
+<p><strong>Bio</strong>.
+Sami EL AMRAOUI is a 3rd year PhD student at TIMA laboratory in the AMfoRS team (Grenoble). His research focuses on fault attacks on digital circuits with a major interest in the modeling and the protection against Electromagnetic pulsed fault injection.</p>
+<h3 id="simulation-tcad-2d-dinjection-de-faute-laser-au-sein-de-composant-unitaire">Simulation TCAD 2D d’injection de faute laser au sein de composant unitaire</h3>
+<p><strong>L. Le Brizoual</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>H. Djeha</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>L. Pichon</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>E. Ferrucho Alavarez</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>L. Claudepierre</strong>
+(Univ. Rennes, CNRS, IETR),
+<strong>R. Viera</strong>,
+(Département Systèmes et Architectures Sécurisés, École des Mines de Saint-Étienne),
+<strong>J. M. Dutertre</strong>
+(Département Systèmes et Architectures Sécurisés, École des Mines de Saint-Étienne)</p>
+<p><strong>Résumé</strong>.
+Durant une attaque par injection laser sur un ensemble de composant l’effet physique
+principal est l’effet photoélectrique qui a pour conséquence la création de paires électron-trou.
+Nous utilisons principalement un laser d’une longueur d’onde de 1064 nm qui
+permet d’obtenir une bonne transmission du faisceau à travers le silicium tout en permettant
+une création significative de paires électrons tous. Sans présence de champ électrique ces
+porteurs diffuseront et se recombineront rapidement sans aucun effet notable. Cependant, à
+l’intérieur de zone de charge d’espace d’une des jonctions PN du transistor polarisé (telles
+que Drain-Source/canal ou jonctions Nwell/substrat d’un transistor), ces paires de trous
+seront séparées par le champ électrique interne et un courant induit par faisceau optique sera
+généré. Dans ce travail, la suite des logiciels Synopsys a été utilisée, Sentaurus Device Éditeur
+(SDE) pour la génération des maillages et SDevice pour la simulation électrique. Nous
+étudierons donc diverses architectures de transistor unitaires MOSFET et des portes logiques,
+telles que l’inverseur et le buffer soumis à un faisceau laser en utilisant une modélisation TCAD
+2D. Le but de cette simulation est de reproduire les photo-courants induits dans le dispositif.
+Nous nous intéresserons aussi plus particulièrement au seuil de puissance laser permettant
+d’obtenir une inversion des signaux de sortie. Les dispositifs intégrés sont réalisés dans un
+nœud technologique de 60 nm. Comme attendu, l’illumination conduit à une augmentation
+des courants avec l’intensité du laser. Nous avons mis en évidence un seuil de basculement
+qui sera confronté avec les résultats de la littérature.</p>
+<p><strong>Bio</strong>.
+Laurent Le Brizoual received the Ph. D degree in material science from the Univ. of
+Nantes in 2000.
+In 2000 he join the “Laboratoire de Physique des
+Milieux Ionisés et Applications” in Nancy university as a permanent staff member.
+His
+interests are in piezoelectric materials for SAW devices, microfluidic systems and plasma
+deposition.
+He joined the Univ. of Nantes in 2008 and work at the “Institut des
+Matériaux Jean Rouxel” on carbon nanotubes for sensors and plasma etching of
+semiconductor.
+Since september 2013 he is professor at the Univ. of Rennes 1 in the
+“Institut d’Electronique et de Télécommunications de Rennes”. He works on nanostructures
+for sensors and thin film deposition. He currently works in the Cybersecurity platform for
+laser faults injection and modelisation of laser effects on devices.</p>
+<h3 id="calibration-post-silicium-de-capteurs-de-detection-dinjection-de-fautes">Calibration post-silicium de capteurs de detection d’injection de fautes</h3>
+<p><strong>Idris Raïs-Ali</strong>
+(SecureIC, LIRMM)</p>
+<p><strong>Résumé</strong>.
+Dans le domaine de la protection contre les attaques
+par injections de fautes, différentes contremesures ont
+été développées, comme des capteurs dont l’objectif est
+la detection de perturbations d’origines multiples (glitch
+d’horloge ou d’alimentation, injection de pulse electromag-
+nétiques ou laser, etc.). Parmi cet ensemble de capteurs,
+nous nous intéressons plus particulièrement aux Digital
+Sensors, qui sont des capteurs basés sur l’évolution des
+délais de propagation du signal sous l’inﬂuence des injec-
+tions.
+La structure de ces capteurs est divisée
+en deux parties: la chaîne de propagation composée de buffers, et la chaîne d’échantillonage composée de couples de buffers et de registres.</p>
+<p>L’intégration de tels capteurs au sein d’un système
+s’effectue durant deux étapes distinctes du developpement
+d’un système sur puce :
+Durant la phase pre-silicum, l’utilisateur doit, à partir
+de caractéristiques intrinsèques de la cible, déterminer
+la bonne longueur des deux chaînes de propagation et d’échantillonnage.
+• Durant la phase post-silicium, il est nécessaire
+d’effectuer un processus de trimming: la variabilité des caractéristiques physiques des circuits a un impact mesurable sur la distance
+parcourue par le signal dans le capteur.
+Il est donc
+nécessaire de calibrer les circuits après leur fabrication
+mais également de calibrer chaque capteur de manière
+individuelle.</p>
+<p>En étudiant plus précisément l’impact des injections électromagnétiques sur un ensemble de capteurs placés autour
+d’une IP AES et fonctionnement de manière synchrone avec
+celui-ci, nous avons pu mettre en évidence l’impact de
+l’augmentation de l’intensité du pulse créé sur l’évolution
+du First One Index de la ﬂotte de capteurs.</p>
+<p><strong>Bio</strong>.
+Je suis actuellement ingénieur de recherche et developpement à Secure-IC.
+Je suis également en contrat de thèse CIFRE en partenariat avec le LIRMM.
+Plus particulièrement, je suis membre de l’équipe d’évaluation de sécurité vis-à-vis des attaques par canaux auxiliaires et par injection de fautes.
+Mes travaux portent sur l’études de contre-mesures et plus particulièrement des capteurs de détection de perturbation, appelés Digital Sensors.</p>
+<h3 id="implementation-and-evaluation-of-countermeasures-in-a-dift-mechanism-against-fault-injection-attacks">Implementation and evaluation of countermeasures in a DIFT mechanism against Fault Injection Attacks</h3>
+<p><strong>William Pensec</strong>
+(Univ. Bretagne Sud, Lab-STICC),
+<strong>Vianney Lapôtre</strong>
+(Univ. Bretagne Sud, Lab-STICC),
+<strong>Guy Gogniat</strong>
+(Univ. Bretagne Sud, Lab-STICC)</p>
+<p><strong>Résumé</strong>.
+Nowadays, IoT devices face many threats and these
+systems, sometimes critical, need to be protected
+against both software and physical attacks. Software
+attacks can be detected using Dynamic Information
+Flow Tracking (DIFT) techniques.</p>
+<p>This study focuses on the D-RI5CY processor.
+Our objective is to develop effective countermeasures against Fault Injection Attacks (FIAs) to
+efficiently protect the D-RI5CY DIFT mechanism. We
+aim to protect only the DIFT-related registers. We
+use fault injection simulations to evaluate the sensi tivity of the DIFT mechanism and identify vulnerable
+registers by using the FISSA open-source tool designed
+to perform automated fault injection campaigns.
+These components manage tags during application execution.
+The security policy is configured via Control and Status
+Registers (CSRs), TPR, and TCR. This design use a
+1-bit data path for tag propagation.</p>
+<p>In this work, we present and explore three countermeasures with different implementations to enhance
+the DIFT mechanism against FIAs. Our analysis aims
+to develop a more robust DIFT mechanism that can
+counter both software and physical attacks.</p>
+<p><strong>Bio</strong>.
+William PENSEC received his MSc in Computer Science with a specialisation in Software for Embedded Systems from Univ. de Bretagne Occidentale (UBO), in Brest in 2021. He joined the ARCAD team at the Lab-STICC laboratory in France starting his PhD in 2021 in Hardware Security at the Univ. Bretagne Sud in Lorient. His area of research focuses on embedded system security, RISC-V core, fault injection attacks, and associated countermeasures, in order to protect an RISC-V core against both software and physical attacks.</p>
+<h3 id="évolutions-dans-la-sécurité-des-modules-de-gestion-de-lénergie"><a href="#legonidec">Évolutions dans la sécurité des modules de gestion de l’énergie</a></h3>
+      </div> <!-- /content -->
+    </div> <!-- /main -->
+
+    <footer id="footer">
+      <div class="footer">
+        <p style="text-align:center; font-size:75%">
+          Site generated by <a href="https://jaspervdj.be/hakyll">Hakyll</a>
+          and <a href="https://pandoc.org">pandoc</a>
+        </p>
+
+        <p style="text-align:center; font-size:75%">
+          
+          <a href="https://github.com/jaif-fr/2024-src/commits">
+            Page last modified
+            
+            by commit c0b3e1c,
+            
+            Fri, 2 Aug 2024 10:18:43 +0200
+          </a>
+          
+        </p>
+        <br>
+      </div>
+    </footer>
+
+
+    <script src="./assets/js/ui.js"></script>
+
+  </body>
+</html>
