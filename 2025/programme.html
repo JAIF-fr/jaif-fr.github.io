@@ -199,7 +199,7 @@
 </tr>
 <tr class="odd">
 <td>Ziling Liao (LIRMM)</td>
-<td><a href="#liao">A venir</a></td>
+<td><a href="#liao">Body Bias Injection on the FLASH Memory Accelerator of a 32-bit Microcontroller</a></td>
 </tr>
 </tbody>
 </table>
@@ -448,6 +448,14 @@ Modern embedded systems, integral to applications such as road vehicles, medical
 To address this, we propose a Decision Tree-based classifier, synthesized in hardware alongside the AES design, to distinguish false positives from genuine faults and provide a separate signal for safety errors. Our approach reduces false positives by over 54% while incurring a minimal area overhead of less than 1%.</p>
 <p><strong>Bio</strong>.
 Daniel is a second-year Ph.D. student at the LCIS Lab in Valence, France, and is conducting his research at STMicroelectronics in Crolles within the Exploration &amp; Advanced R&amp;D team. Prior to his Ph.D., he completed a three-year internship with the same team, focusing on functional safety verification methods and FPGA design and implementation. His doctoral research centers on the joint analysis and design of hardware for safety and security: development of security analysis methods at the netlist level, study of safe and secure AES designs, and advanced countermeasures design for such applications.</p>
+<h3 id="liao">Body Bias Injection on the FLASH Memory Accelerator of a 32-bit Microcontroller</h3>
+<p><strong>Ziling Liao</strong> (LIRMM)</p>
+<p><strong>Abstract</strong>.
+As a fault injection technique, Body Bias Injection (BBI) involves applying voltage pulses to a circuit’s substrate, potentially disrupting local behavior and causing transient faults. My research studies BBI’s impact on program control flow of microcontrollers, a topic previously underexplored for BBI.</p>
+<p>Using an STM32F4 microcontroller as the target, I conducted a three-phase experiment to test BBI’s effect on sequential execution, conditional branching, and loop structures. The objective is to reveal if BBI can induce exploitable faults during the processing of control structures. The results reveal that BBI most reliably induces faults related to the failure of instruction buffer updates in the FLASH accelerator—rather than directly affecting CPU pipelines. When these buffer updates fail, entire instruction lines can be skipped or replayed, leading to significant deviations in program control flow. Notably, buffer update faults also corrupt the instruction cache indirectly by storing incorrect instruction lines, which can cause persistent execution errors in repeated loops or branches that highly rely on the instruction cache lines.</p>
+<p>This research identifies a specific architectural vulnerability in some microcontrollers: the lack of integrity checks on instruction buffer contents. Such a flaw allows attackers to manipulate program flow without being detected, raising serious implications for embedded system security.</p>
+<p><strong>Bio</strong>.
+Ziling LIAO is a Ph.D. student at LIRMM. She received her Engineering diploma in Electrical Engineering from INSA Lyon in 2023. She is currently conducting research on hardware security in integrated circuits. Her work focuses on low-cost fault injection attacks, such as Electromagnetic Fault Injection (EMFI) and Body Bias Injection (BBI), and their impact on memory and control flow in embedded microcontrollers.</p>
       </div> <!-- /content -->
     </div> <!-- /main -->
 
@@ -463,9 +471,9 @@ Daniel is a second-year Ph.D. student at the LCIS Lab in Valence, France, and is
           <a href="https://github.com/jaif-fr/2025-src/commits">
             Page last modified
             
-            by commit ec32292,
+            by commit 775f32f,
             
-            Tue, 15 Jul 2025 10:02:30 +0200
+            Tue, 15 Jul 2025 15:01:59 +0200
           </a>
           
         </p>
